@@ -28,7 +28,7 @@ const UNSORTED = path.join(ROOT, 'data', 'unsorted.json');
 const FIELDS = 'id,caption,media_type,media_url,thumbnail_url,permalink,timestamp,like_count,comments_count';
 const PAGE = 100;
 const MAX_PAGES = 6;
-const PER_SECTION = 12;   // how many of the newest posts each gallery shows
+const PER_SECTION = 24;   // how many of the newest posts each gallery shows
 
 /* ---------- classification ---------- */
 
