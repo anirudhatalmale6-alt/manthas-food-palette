@@ -46,7 +46,7 @@ jobs:
         run: |
           git config user.name  "Instagram sync"
           git config user.email "actions@github.com"
-          git add data/posts.json data/unsorted.json
+          git add data/posts.json data/unsorted.json assets/img/hero.jpg
           if git diff --staged --quiet; then
             echo "no change in the feed"
           else

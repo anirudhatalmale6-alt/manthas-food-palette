@@ -24,6 +24,8 @@ const TOKEN = process.env.IG_TOKEN;
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'data', 'posts.json');
 const UNSORTED = path.join(ROOT, 'data', 'unsorted.json');
+const OVERRIDES = path.join(ROOT, 'data', 'overrides.json');
+const HERO = path.join(ROOT, 'assets', 'img', 'hero.jpg');
 
 const FIELDS = 'id,caption,media_type,media_url,thumbnail_url,permalink,timestamp,like_count,comments_count';
 const PAGE = 100;
@@ -75,6 +77,15 @@ function classify(caption) {
 function title(caption) {
   const line = (caption || '').split('\n').map((s) => s.trim()).filter(Boolean)[0] || '';
   return line.length > 110 ? line.slice(0, 107).trimEnd() + '…' : line;
+}
+
+/* Posts the client has placed by hand. These always beat the rule. */
+function overrides() {
+  try {
+    return JSON.parse(fs.readFileSync(OVERRIDES, 'utf8')).sections || {};
+  } catch (err) {
+    return {};
+  }
 }
 
 /* ---------- fetching ---------- */
@@ -138,12 +149,13 @@ async function main() {
   const media = await fetchMedia();
   console.log(`fetched ${media.length} posts`);
 
+  const byHand = overrides();
   const sorted = { food: [], art: [] };
   const unsorted = [];
   let noVideoUrl = 0;
 
   for (const m of media) {
-    const section = classify(m.caption);
+    const section = byHand[m.id] || classify(m.caption);
     const isVideo = m.media_type === 'VIDEO';
     const isCarousel = m.media_type === 'CAROUSEL_ALBUM';
 
@@ -212,13 +224,37 @@ async function main() {
   console.log(`${noVideoUrl} reels have no playable video URL from Instagram`);
   console.log(`published the newest ${PER_SECTION} of each`);
 
+  await updateHero([...sorted.art, ...sorted.food]);
+
   const fresh = await refreshToken();
   if (fresh && process.env.GITHUB_OUTPUT) {
     fs.appendFileSync(process.env.GITHUB_OUTPUT, `new_token=${fresh}\n`);
   }
 }
 
-module.exports = { classify, title };
+/* The homepage picture. Her newest still photograph if she has one, otherwise
+ * the newest reel cover. Downloaded into the repo so it never expires and
+ * still shows with JavaScript switched off. */
+async function updateHero(posts) {
+  const pick = posts.find((p) => p.type === 'IMAGE') || posts[0];
+  if (!pick || !pick.src) {
+    console.warn('no hero candidate — leaving the existing picture alone');
+    return;
+  }
+  try {
+    const res = await fetch(pick.src);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const buf = Buffer.from(await res.arrayBuffer());
+    if (buf.length < 5000) throw new Error(`suspiciously small (${buf.length} bytes)`);
+    fs.writeFileSync(HERO, buf);
+    console.log(`hero picture updated from "${pick.caption.slice(0, 50)}" (${Math.round(buf.length / 1024)} KB)`);
+  } catch (err) {
+    // A failed download must not replace her picture with a broken file.
+    console.warn(`hero picture not updated: ${err.message}`);
+  }
+}
+
+module.exports = { classify, title, overrides };
 
 if (require.main === module) {
   main().catch((err) => {
