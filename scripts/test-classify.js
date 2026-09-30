@@ -82,3 +82,33 @@ if (failed) {
   console.error(`${failed} FAILED`);
   process.exit(1);
 }
+
+/* ---------- which picture goes at the top ---------- */
+const { pickHero } = require('./sync-instagram.js');
+
+const feed = [
+  { id: '1', type: 'VIDEO', src: 'v1.mp4' },
+  { id: '2', type: 'IMAGE', src: 'i2.jpg' },
+  { id: '3', type: 'IMAGE', src: 'i3.jpg' }
+];
+
+const heroCases = [
+  [[feed, null], '2', 'no pin: newest still photograph, not the newer reel'],
+  [[feed, '3'], '3', 'a pinned post wins over the newest'],
+  [[feed, 3], '3', 'a numeric id still matches'],
+  [[feed, '999'], '2', 'a pin that is not in the feed falls back, it does not blank'],
+  [[[{ id: '9', type: 'VIDEO', src: 'v.mp4' }], null], '9', 'reel cover when there are no photographs'],
+  [[[], null], null, 'an empty feed picks nothing rather than crashing']
+];
+
+let heroFailed = 0;
+for (const [[posts, pin], expected, what] of heroCases) {
+  const got = pickHero(posts, pin);
+  const id = got ? got.id : null;
+  if (id !== expected) {
+    heroFailed++;
+    console.log(`FAIL hero (${what})\n      expected ${expected}, got ${id}`);
+  }
+}
+console.log(`${heroCases.length - heroFailed}/${heroCases.length} hero checks passed`);
+if (heroFailed) { process.exit(1); }

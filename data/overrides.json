@@ -1,7 +1,9 @@
 {
-  "note": "Posts placed by hand, because the caption alone could not decide. Confirmed by the client 30 Sep 2026. An entry here always beats the automatic rule.",
+  "note": "Choices made by hand. These always beat the automatic rule.",
   "sections": {
     "17950446697588717": "art",
     "17942856493589469": "art"
-  }
+  },
+  "heroPost": null,
+  "heroPostNote": "Instagram post id to pin as the homepage picture. null = use her most recent work. The acrylic Hanuman the client linked on 30 Sep is 17908223054189811."
 }

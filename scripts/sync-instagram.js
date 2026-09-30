@@ -79,13 +79,17 @@ function title(caption) {
   return line.length > 110 ? line.slice(0, 107).trimEnd() + '…' : line;
 }
 
-/* Posts the client has placed by hand. These always beat the rule. */
-function overrides() {
+/* Choices the client has made by hand. These always beat the rule. */
+function manualChoices() {
   try {
-    return JSON.parse(fs.readFileSync(OVERRIDES, 'utf8')).sections || {};
+    return JSON.parse(fs.readFileSync(OVERRIDES, 'utf8')) || {};
   } catch (err) {
     return {};
   }
+}
+
+function overrides() {
+  return manualChoices().sections || {};
 }
 
 /* ---------- fetching ---------- */
@@ -224,7 +228,7 @@ async function main() {
   console.log(`${noVideoUrl} reels have no playable video URL from Instagram`);
   console.log(`published the newest ${PER_SECTION} of each`);
 
-  await updateHero([...sorted.art, ...sorted.food]);
+  await updateHero([...sorted.art, ...sorted.food], manualChoices().heroPost);
 
   const fresh = await refreshToken();
   if (fresh && process.env.GITHUB_OUTPUT) {
@@ -232,11 +236,22 @@ async function main() {
   }
 }
 
-/* The homepage picture. Her newest still photograph if she has one, otherwise
- * the newest reel cover. Downloaded into the repo so it never expires and
- * still shows with JavaScript switched off. */
-async function updateHero(posts) {
-  const pick = posts.find((p) => p.type === 'IMAGE') || posts[0];
+/* The homepage picture. A post pinned in data/overrides.json if there is one,
+ * otherwise her newest still photograph, otherwise the newest reel cover.
+ * Downloaded into the repo so it never expires and still shows with
+ * JavaScript switched off. */
+function pickHero(posts, pinnedId) {
+  if (pinnedId) {
+    const pinned = posts.find((p) => p.id === String(pinnedId));
+    if (pinned) return pinned;
+    // Say so loudly rather than quietly showing the wrong picture.
+    console.warn(`pinned hero ${pinnedId} is not in the feed — falling back to the newest work`);
+  }
+  return posts.find((p) => p.type === 'IMAGE') || posts[0] || null;
+}
+
+async function updateHero(posts, pinnedId) {
+  const pick = pickHero(posts, pinnedId);
   if (!pick || !pick.src) {
     console.warn('no hero candidate — leaving the existing picture alone');
     return;
@@ -254,7 +269,7 @@ async function updateHero(posts) {
   }
 }
 
-module.exports = { classify, title, overrides };
+module.exports = { classify, title, overrides, pickHero };
 
 if (require.main === module) {
   main().catch((err) => {
