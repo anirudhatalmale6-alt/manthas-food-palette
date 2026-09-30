@@ -6,6 +6,18 @@
 const { classify } = require('./sync-instagram.js');
 
 const cases = [
+  // --- the real tags the client uses, initial caps (confirmed 30 Sep 2026) ---
+  ['Mandala in ink #ManthaArt', 'art'],
+  ['Sunday lunch #ManthaFood', 'food'],
+  // the tag must win even when the caption reads like the other section
+  ['Recipe for the sauce in this painting #ManthaArt', 'art'],
+  ['Plated like a work of art #ManthaFood', 'food'],
+  // Instagram tags are case-insensitive, so these must behave identically
+  ['#manthaart', 'art'],
+  ['#MANTHAFOOD', 'food'],
+  // "#ManthaArt" must not also trip the bare-word "art" rule
+  ['#ManthaArt', 'art'],
+
   // --- must be ART ---
   ['Ink mandala, three evenings of small circles. #manthaart', 'art'],
   ['New art on paper today', 'art'],
