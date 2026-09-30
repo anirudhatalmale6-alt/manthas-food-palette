@@ -13,9 +13,14 @@ Instagram: [@manthas_food_palette](https://www.instagram.com/manthas_food_palett
 Wikimedia Commons (CC0 / CC BY-SA). Neither form is connected to a mailbox yet;
 submitting one says so rather than pretending to send.
 
+**Domain chosen:** themanthastudio.com
+
+**Contact:** +62 812 9161 2480 (phone/WhatsApp, Jakarta) · suvarnamantha@icloud.com
+
 ## Next steps
 1. Switch the Instagram account to Creator/Business.
-2. Connect the Instagram Graph API; tag food vs art posts so each grid fills correctly.
+2. Connect the Instagram Graph API. Food vs art is sorted by caption keyword:
+   whole-word "recipe" goes to Food, whole-word "art" goes to Art.
 3. Wire both forms to a real inbox.
 4. Register the domain and point it here.
 
