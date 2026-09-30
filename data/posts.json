@@ -1,19 +1,328 @@
 {
-  "source": "placeholder",
-  "note": "Placeholder content. Replaced automatically by scripts/sync-instagram.js once the Instagram connection is authorised.",
+  "source": "instagram",
+  "account": "manthas_food_palette",
+  "generated": "2026-09-30T15:02:25.232Z",
+  "showStats": false,
+  "counts": {
+    "fetched": 288,
+    "food": 184,
+    "art": 101,
+    "unsorted": 3,
+    "reelsWithoutPlayableVideo": 121,
+    "shownPerSection": 12
+  },
   "posts": [
-    { "id": "ph-f1", "section": "food", "type": "IMAGE", "src": "assets/img/p1.jpg", "caption": "Crisp dosa, soft centre — the Sunday standard.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 1240, "comments": 38 },
-    { "id": "ph-f2", "section": "food", "type": "IMAGE", "src": "assets/img/p2.jpg", "caption": "Dum biryani, lid sealed, forty minutes of patience.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 2815, "comments": 96 },
-    { "id": "ph-f3", "section": "food", "type": "IMAGE", "src": "assets/img/p3.jpg", "caption": "Chole bhature. No notes, just breakfast.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 1902, "comments": 54 },
-    { "id": "ph-f4", "section": "food", "type": "IMAGE", "src": "assets/img/p5.jpg", "caption": "Gulab jamun, warm, soaked, gone in minutes.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 3410, "comments": 128 },
-    { "id": "ph-f5", "section": "food", "type": "IMAGE", "src": "assets/img/p6.jpg", "caption": "Paneer tikka off the grill, straight onto the board.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 1577, "comments": 43 },
-    { "id": "ph-f6", "section": "food", "type": "IMAGE", "src": "assets/img/p9.jpg", "caption": "Dark chocolate cake, salted sauce, one slice only.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 2668, "comments": 88 },
-
-    { "id": "ph-a1", "section": "art", "type": "IMAGE", "src": "assets/img/a1.jpg", "caption": "Ink mandala, three evenings of small circles.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 874, "comments": 22 },
-    { "id": "ph-a2", "section": "art", "type": "IMAGE", "src": "assets/img/a2.jpg", "caption": "Butterfly mandala — colour test on paper.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 1105, "comments": 31 },
-    { "id": "ph-a3", "section": "art", "type": "IMAGE", "src": "assets/img/a3.jpg", "caption": "Madhubani panel, natural pigments, slow work.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 1433, "comments": 47 },
-    { "id": "ph-a4", "section": "art", "type": "IMAGE", "src": "assets/img/a4.jpg", "caption": "Warli figures — a whole village on one wall.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 962, "comments": 18 },
-    { "id": "ph-a5", "section": "art", "type": "IMAGE", "src": "assets/img/a5.jpg", "caption": "Acrylic study. No plan, just colour.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 1288, "comments": 36 },
-    { "id": "ph-a6", "section": "art", "type": "IMAGE", "src": "assets/img/a6.jpg", "caption": "Watercolour botanicals for a commission.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 2014, "comments": 63 }
+    {
+      "id": "18127174408773082",
+      "section": "food",
+      "type": "VIDEO",
+      "src": "https://scontent-fra3-2.cdninstagram.com/v/t51.82787-15/790755225_18086278100676178_2820145288002461988_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=qey2a0oFqTIQ7kNvwHcckeN&_nc_oc=AdrYau9Ss2L8QfdfM4aj9hI4h_3MvIvVMgRtSiyfaokzkWb7W41H5LT4hsYB7pTNkLvzPJM-9aqkZtIn7sPbuj7m&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQIUrmNtQkWSgNTR7X8kE1lulbVmxB1byLRD_Ca2d_IjJ-d0T944a3EZtWGLQZfLtgJicqsdKLYuBw&oh=00_AQOcRW5-AUWsO0rlEHcneZFv5P9Uw7EbO47vZZky8eRgOQ&oe=6AC2FBCD",
+      "video": "https://scontent-fra5-1.cdninstagram.com/o1/v/t2/f2/m86/AQNBHofqnYWmBMat2Fie3KuNcM1SbO8tEzboPK7dDzU_kuoCznl1dSI-TFdFV8-50yrXQHw7l6QEtb_PmyPlTc8rsNdhPuo98XSio1w.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_ohc=B95BW5sngH0Q7kNvwFwTUub&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTA3ODkwMDQ1NDYxNDM3MSwiYXNzZXRfYWdlX2RheXMiOjMwLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTUwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=5a5620258706c2b1&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC81RDRENkQ1MUU5QUI3MTU1Mzg1RDY4QzRENENFMENBQV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyL0JFNDAzM0Q5QkQ4MTBEMTdDRjhCQjQwN0UzODlBOEE0X2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbGlcPlotDqAxUCKAJDMywXQGLVT987ZFoYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&edm=ANo9K5cEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQIxMF1NLCuvXMFnI9UW7pQ9Wdq88aDCZGXo5ymygFdQkx1Me-_KabfMfTjmxo74jLmYg49ZG9zDeg&oh=00_AQOrxa99tN3fgdAYIDq6ncJfYtnoi-huQ1k6OuEkEkVCaA&oe=6ABF0446",
+      "caption": "Black Gram Vada (Prasad Style)",
+      "fullCaption": "Black Gram Vada (Prasad Style)\n\nTraditionally offered as Prasad in Hanuman and Venkateswara Balaji temples, often strung together as Vada Mala garlands for Hanuman . \n\nThe crisp bite, peppery aroma, and ghee‑infused flavor make them a favorite both in temples and homes. \n\nIngredients\n\n• 500 g black gram (whole or split black urad dal)\n• 50 ml ghee\n• 2 tsp (≈12 g) salt\n• 2 tsp (≈5 g) cumin seeds\n• 3 tsp (≈11 g) black pepper\n• Pinch of hing (asafoetida)\n\nMethod\n\n1. Place the black gram in hot water for 30–45 minutes only. Do not over‑soak.\n2. Drain completely and grind coarsely without adding water , with salt ,cumin, black pepper, and hing.\n3. Heat ghee until hot, pour it over the mixture, and mix well.\n4.Take small portions, roll into balls, and press flat on a baking sheet or plate to desired thickness. .\n\n* Thin vadas → crispier texture\n* Thicker vadas → softer inside\n\n5. Deep fry on medium flame until golden brown.\n\n#vada #blackgramvada #hanumanmala❤️ #southindianprasadams #manthafood #ManthaFood",
+      "permalink": "https://www.instagram.com/reel/DcsrE-LyoKT/",
+      "timestamp": "2026-08-31T08:39:21+0000",
+      "likes": 8,
+      "comments": 0
+    },
+    {
+      "id": "17939165058346882",
+      "section": "food",
+      "type": "VIDEO",
+      "src": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/777418196_18084557486676178_7970638601183394512_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=16tj0_X31mUQ7kNvwHzXvVT&_nc_oc=AdqXZri5wJrVWwXXWvokhyt08UR8nrpvXkTFIjtBvIEWJLrc6toqhSLFkz9FxMOCyTMchVgMWm1ZTZnWMIJVi22V&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQLDC2152PB0vUUR6pIvjldG3F9RJyfVHyA7M8fLzQZ1SOZomCqAmzA65pyFoRdPSFe9BpTaxR6WMA&oh=00_AQO9TdJudymYUxuyuTMG5QzWNsA2UAsnbFAPXFz42FNJHg&oe=6AC2E382",
+      "video": null,
+      "caption": "🌱 Coriander Rice (Khotimeera Annam)",
+      "fullCaption": "🌱 Coriander Rice (Khotimeera Annam)\n\n✨ A fragrant, flavorful rice dish that’s quick to make - Can be enjoyed as it is or pairs beautifully with yogurt or dal.\n\nIngredients\n• 200 g rice (cook & cool )\n• 3–4 green chilies (adjust to taste)\n• 3–4 garlic cloves\n• 2 tbsp white sesame\n• 100 g fresh coriander leaves\n• 2 tbsp oil\n• 2 tsp salt\n\nTempering:\n• 1 tsp urad dal\n• 1 tsp chana dal\n\nMethod\n1. Heat oil, fry chilies & garlic lightly.\n2. Add sesame, fry till golden.\n3. Add chopped coriander leaves, sauté 2 mins. Cool & coarsely grind.\n4. In a pan, heat oil, fry urad & chana dal till golden.\n5. Add ground coriander mix + salt, sauté briefly.\n6. Mix in rice, toss well.\n\n#corianderRice #KhotimeeraAnnam #IndianFoodLove #QuickRecipes #HomeCooking #ManthaFood #manthafood",
+      "permalink": "https://www.instagram.com/reel/DcN5jKtSLJQ/",
+      "timestamp": "2026-08-19T09:49:05+0000",
+      "likes": 13,
+      "comments": 0
+    },
+    {
+      "id": "18541836058042267",
+      "section": "food",
+      "type": "VIDEO",
+      "src": "https://scontent-fra3-2.cdninstagram.com/v/t51.82787-15/601836622_18052319537676178_179560263532674421_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=uSXCpUs1bB0Q7kNvwH3NsgM&_nc_oc=Ado5DjiyzXAhRXhZF0tzhShZqjXQ6WfKyFY8jma3nc72SZWaSRHOBN_W6vhoCb7MjFaYwXyAFCqaZkT07a6mpfMY&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQLAr0K6ptiHgmJj1JyD67D-S2hOW2ZGtJtNHy2EjCPcfpBSgplCX9Crq7Nkx_w4kIB4YsKt1SpxzQ&oh=00_AQP6678P-FLXI0Yew1jdaOYzTja0w-fmjyB8LZ18L_l2gA&oe=6AC3116D",
+      "video": null,
+      "caption": "Crispy Ragi Spinach Balls",
+      "fullCaption": "Crispy Ragi Spinach Balls\n\nLove the earthy goodness of ragi? These balls are crispy outside, soft inside, and perfect to enjoy plain as they are or with peanut chutney, pickle, or your favorite sauce. Best eaten hot for crunch, though they turn soft and comforting when cool. You can also add spinach, grated carrot, or grated bottle gourd for extra flavor and nutrition.\nIngredients\n• 1 glass ragi flour\n• 1 glass sour buttermilk\n• 1 glass water\n• 3–4 green chilies, finely chopped\n• 1 medium onion, finely chopped\n• 1 bunch spinach, blanched & chopped\n• A handful of coriander leaves, finely chopped\n• 2–3 tbsp oil\nMethod\n1. In a pan, mix ragi flour, buttermilk, water, green chilies, onion, spinach, coriander, and oil.\n2. Cook on medium flame, stirring continuously, until it forms a firm dough. Keep adding a little oil to avoid sticking.\n3. Cover and let it rest until warm.\n4. Knead well, then shape into small balls.\n5. Cook by one of these methods:• Air fry at 170°C for 10–12 minutes\n• Deep fry until golden brown\n• Shallow fry in a pan with little oil.\n#RagiRecipes #HealthyEating #MilletMagic #WholesomeSnacks #NutritiousAndDelicious #SpinachGoodness #IndianSnacks #HomemadeGoodness #SnackGoals #FoodieFavorites #CrispyRagiBalls #healthytwist #ManthaFood #manthafood",
+      "permalink": "https://www.instagram.com/reel/DSaBE_qkhfM/",
+      "timestamp": "2025-12-18T13:31:48+0000",
+      "likes": 10,
+      "comments": 0
+    },
+    {
+      "id": "17904085269301098",
+      "section": "food",
+      "type": "VIDEO",
+      "src": "https://scontent-fra3-2.cdninstagram.com/v/t51.82787-15/591161318_18051343583676178_6227842683121296122_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ztkr7-YWdowQ7kNvwFwt2aI&_nc_oc=AdpYkfvkEctoYOgb1amZTiac3kFhGmFID7z3KlmR8w4zAfykiRwajjrpLfZsQca79LN6FEyzFG1mk8O_me5Ephfg&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQIrLPkSuHth7h0qp2p0-SSTI89zzZqAADTf1LGYBPG7VC5nG7GWuSqTjrqeW87-UHfK9LXLzf1Pww&oh=00_AQOcPRineOos4O6qw93GgSSHPvjKmtgDjN9wtELmkAxt7Q&oe=6AC2DC01",
+      "video": null,
+      "caption": "Air-Fried Crispy Poha",
+      "fullCaption": "Air-Fried Crispy Poha\nA light, crunchy, and flavorful snack made with minimal ingredients—healthy, tasty, and absolutely addictive! Perfect for tea-time, travel, or guilt-free munching anytime.\n\nIngredients\n• 250 g poha (flattened rice)\n• 1 cup peanuts (75 g)\n• 1 cup cashews (75 g)\n• 1 cup roasted chana dal (50 g)\n• 8–10 green chillies, slit lengthwise\n• A handful of curry leaves\n• 2 tbsp oil\n• ½ tsp hing (asafoetida)\n• ¼ tsp turmeric powder\n• Salt to taste\n(Optional: add makhana and puffed rice for extra crunch)\nMethod\n1. Air-fry separately at 180°C:\n• Poha: 5–8 minutes until crisp\n• Peanuts & cashews: 5 minutes until golden\n• Roasted chana dal: 2 minutes\n\n2. Prepare seasoning:\n• Heat oil in a pan.\n• Fry green chillies until slightly crisp.\n• Add curry leaves; fry until crunchy.\n• Stir in hing and turmeric.\n\n3. Mix & coat:\n•Combine roasted poha, peanuts, cashews, and chana dal.\n• Add salt and seasoning.\n• Toss well until evenly coated.\n#GoldenCrunchPoha #AirFriedGoodness #TeaTimeTreats”\n\n#CleanEating\n#HealthyChoices\n#SnackSmart\n#NutritiousAndDelicious\n#WholesomeSnacks\n#MindfulEating\n#ManthaFood #manthafood",
+      "permalink": "https://www.instagram.com/reel/DSCGCIQEoIQ/",
+      "timestamp": "2025-12-09T06:32:37+0000",
+      "likes": 13,
+      "comments": 0
+    },
+    {
+      "id": "18055730837322415",
+      "section": "food",
+      "type": "VIDEO",
+      "src": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/587991018_18050063894676178_6442295184940564252_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Rtr41AUWqk4Q7kNvwFWL9f4&_nc_oc=AdpLmV5ceeCYlqFuk3hfWyKTJqsVfi64pnhde21HLjlJ4DfCZteOTqqyG-jVKUe7V3h1HP1bhC7vqYQzuQ5ahm9j&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQLydL7rnH4b-tUahlR_l7Nxi46U7HUJ9ZPQrb4YG1a5zJdhR9gedaplc0ahu9BCZhMVffSyMIIvXQ&oh=00_AQP4d_BkGmG6p_RvbNwhPCIj2TlOh7UDhCk9vD92b1fWWA&oe=6AC2EB1C",
+      "video": null,
+      "caption": "Crispy Sesame (Til) Chikki – Traditional Sweet Treat",
+      "fullCaption": "Crispy Sesame (Til) Chikki – Traditional Sweet Treat\nThis is one of my all‑time favorites! I’ve always bought sesame (til) chikki from stores, but tried making it at home for the first time — and wow, it tastes so fresh, good, and crispy. Truly one of the easiest sweets to make!\nYou can also add sunflower seeds, pumpkin seeds, or peanuts for extra crunch and flavor.\nIngredients\n• 150 g roasted sesame seeds (til)\n(gas top / 180°C – 5 mins)\n• 100 g jaggery\n• ¼ cup water (≈ 50 ml)\n• 1 tsp ghee\n1. Add water and jaggery to a pan.\n• Boil until jaggery melts.\n• If impurities appear, strain and return to the pan.\n• Continue boiling until it reaches a soft , firm ball consistency (test by dropping a little syrup in cold water — it should form a firm ball).\n2. Mix with Sesame• Add roasted sesame seeds to the hot jaggery syrup.\n• Stir quickly so all seeds are evenly coated. Cook for 1-2 mins.\n3. Grease a plate with ghee and transfer the mixture.\n• Place a greased paper or plate on top and press to desired thickness.\n• Alternatively, grease a rolling pin and roll while mixture is still medium hot.\n4. Cut or Shape• While still warm, mark lines for cutting.\n• Once cooled, break into pieces.\n• Optionally, grease your hands and shape into til laddus (balls) while mixture is safe to handle.\nTips\n• Always test jaggery syrup consistency; undercooked syrup makes sticky chikki, overcooked makes it too hard.\n• Store in an airtight container to keep crisp.\n#SesameChikki #TilChikki #IndianSweets #HealthySnacking #WinterSpecial #HomemadeGoodness #JaggeryRecipes #FestiveTreats #DesiDesserts #sweetcrunch #ManthaFood #manthafood",
+      "permalink": "https://www.instagram.com/reel/DRjbwpwEjy6/",
+      "timestamp": "2025-11-27T08:47:48+0000",
+      "likes": 8,
+      "comments": 2
+    },
+    {
+      "id": "18009344612803196",
+      "section": "food",
+      "type": "VIDEO",
+      "src": "https://scontent-fra5-1.cdninstagram.com/v/t51.82787-15/584397282_18049060472676178_3568785226706387546_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=TcMlLH8rXvsQ7kNvwEuRbvu&_nc_oc=AdoleopwhigLpbX5CLJCG48gLXvcb-yV0TRTPqmvJEV8UGGYh9C5276IJbgRXfNL6A_06jIIXea5VWsgGRET5s7V&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQKkTH442Ch4vhCa5rViZcUz0zzQ-XDMjUuuHe0CuV4T_er94YwLsqQKgxnVTn1JA4CgF901ZKMReA&oh=00_AQOPL5VQu15oggmbtcN9GzDDlJN3eRxvY2XScx7wHnCSjw&oe=6AC30D37",
+      "video": "https://scontent-fra5-1.cdninstagram.com/o1/v/t2/f2/m367/AQNGvUhTRcpKjArmHYhbhNIlHb8dGFq2p7hyNoYEecxwSCmpDsBR64_HkxWQRfw954qAsoxTGdpdmBkrncicNIgxXbQXO9blXq21b40.mp4?_nc_cat=109&_nc_sid=5e9851&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_ohc=NTGleF0jQhMQ7kNvwEEbFK6&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6NDAyODMwNjU4MDc1ODA2NiwiYXNzZXRfYWdlX2RheXMiOjMxNywidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjE0OSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=e70c95686486119a&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC9ENjQ0QzVGRkQ4QkIwQTdEM0VGRTUwNDNERjIxMEE5Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYRmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC81NTA2ODI0MDgxNDAwNzNfNTU5MDY3NDc2MzE3NDI5MjcxNS5tcDQVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm5PjW7Kbupw4VAigCQzMsF0BipmZmZmZmGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&edm=ANo9K5cEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQLnGdz5EZXkfb3lsrEYw9SKoPoShfnuLYDaezqMa-zSa12d4Nl7FtYOLasKl6-DLmW7NWZAmCgSoA&oh=00_AQOP9E2AEUArTaakDDV7vsfaDLGm6YYM7azxPZAtVe1p5g&oe=6AC2F94A",
+      "caption": "Minty Chana Yogurt Bowl",
+      "fullCaption": "Minty Chana Yogurt Bowl\nA refreshing, protein-packed snack bursting with flavor and crunch!\n\nIngredients:\n• 1 cup cooked chickpeas (chana)\n• 1 tbsp coriander-mint chutney\n• 2 tbsp thick yogurt\n• ½ cup finely chopped cucumber\n• 1 tomato, chopped\n• 1 small onion, chopped\n• ½ tsp chaat masala\nMethod:\n1. Soak chana overnight and pressure cook for 3–4 whistles with a pinch of salt.\n2. In a bowl, take 1 cup of boiled chana.\n3. Add coriander mint chutney, yogurt, cucumber, tomato, and onion.\n4. Mix everything well until coated.\n5. Sprinkle chaat masala on top.\n6. Serve chilled or at room temperature. Enjoy the burst of flavors ! \n#MintyChanaBowl #HealthySnack #ProteinPower #ChickpeaRecipe #YogurtChaat #QuickBites #DesiTwist #ChanaChaat #VegetarianDelight #ReelRecipe #ManthaFood #manthafood",
+      "permalink": "https://www.instagram.com/reel/DRJvuxUkiwa/",
+      "timestamp": "2025-11-17T09:20:47+0000",
+      "likes": 12,
+      "comments": 0
+    },
+    {
+      "id": "18114005719560380",
+      "section": "food",
+      "type": "VIDEO",
+      "src": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/573820724_18047706869676178_7686326989221398728_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=Qb6gQGxZAnYQ7kNvwE5_-vz&_nc_oc=Adpe2GeKvS1sBoaqqxIO7W_e5dYh5I5J42E3D-2pEAZsH_IcEI44wAu-nbf7APqD9mFg_6fTJopNU-DsdbEhSoLX&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQJ3rtrF6B4meQMXY4_phYAg1AYVcd1_IyQzS_27UJpoKmlXh3OJgKxJk2XV-vlcqwh-0_iluNzhEw&oh=00_AQOFBXGpI_NaE4s6Nga-ZQdAp7QLykTV-q1Ep0jBZoByrw&oe=6AC30AF1",
+      "video": "https://scontent-fra5-1.cdninstagram.com/o1/v/t2/f2/m367/AQNa1zuEg2j-WFTbZKQGb51iGbMMoOE-CH8-cLuyrAuKYMmSjz2GoY14Os3TE_b-9D2nawnXXNjvmUfKSrTFhNRnIVFgwY2jFSgC1xw.mp4?_nc_cat=110&_nc_sid=5e9851&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_ohc=H3ZEcEgq6l4Q7kNvwGmrxbu&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MzgwNDMyNTUxOTg2OTQ2NiwiYXNzZXRfYWdlX2RheXMiOjMyOCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjExNywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=ba9a21599a61d728&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC83RDQ1NUQ3MDkwQzJDRkExREI5OTczMTE2MEM4NThCMl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYSGlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8yNTgxMDU1NzQzNTIwNzEwNl8yODI1MDE0MzU4MTQ4OTE0NjM5Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACa0mMbz8YDCDRUCKAJDMywXQF190vGp--cYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&edm=ANo9K5cEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQJNwq8OoyiKCUhjy_sTaoD7Yb1d1sf84MFTcZpo3FdhyLzh3ye31hxeiPpM-SrhfDJijUdL81BwXg&oh=00_AQMXorUU1TNQN3zCSGCKiVAW3YHXlNx2wZebN6Yzikxdmw&oe=6AC30403",
+      "caption": "After a little break, I’m back with a quick and delicious treat that’s perfect for snacking or everyday cra…",
+      "fullCaption": "After a little break, I’m back with a quick and delicious treat that’s perfect for snacking or everyday cravings! This crunchy makhana recipe tastes just like caramel popcorn—but with a wholesome desi twist. Ready in minutes, and totally addictive!\n\nCaramel Makhana Crunch\nIngredients:\n• Makhana (Fox Nuts) – 100 g\n• Til (Sesame Seeds) – 50 g\n• Jaggery – 150 g\n• Ghee – 1 tsp\n• Water – ½ cup\nInstructions:\n1. Dry roast makhana and sesame seeds separately in an air fryer or on gas.\n* Makhana should be crispy.\n* Sesame seeds should turn light brown and aromatic.\n2. In a wide pan, add water and grated jaggery.\n* Simmer on low flame until it thickens and forms sticky drops from the ladle.\n3. Add ghee, roasted sesame, and makhana. Mix well to coat evenly.\n4. Transfer to a plate while still warm (or it may stick to the pan).\n5. Let it cool completely and store in an airtight container.\nReady in minutes, this crunchy delight is perfect for guilt-free snacking!\n#CaramelMakhana #HealthySnacks #QuickRecipes #DesiTwist #MakhanaMagic #GuiltFreeTreats #JaggeryLove #SesameCrunch #IndianSuperfoods #SnackReel #EasyCooking #SweetAndCrunchy #AirFryerRecipe #VeganSnack #TraditionalMeetsTrendy #ManthaFood #manthafood",
+      "permalink": "https://www.instagram.com/reel/DQtyvCRErWa/",
+      "timestamp": "2025-11-06T12:49:34+0000",
+      "likes": 10,
+      "comments": 0
+    },
+    {
+      "id": "18169931956342456",
+      "section": "food",
+      "type": "VIDEO",
+      "src": "https://scontent-fra3-2.cdninstagram.com/v/t51.82787-15/522918821_18035251784676178_3446778279590068436_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=8GTyjv9IpckQ7kNvwE0UABN&_nc_oc=AdqpYp-rcjYKsvJM_bC6w3OH6J9TDOnhKWZ6BSuWCRPLRuZg4AXLioD2BE01rxpGQ6-eiRK1OMXSO3XV_LnJkEAw&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQIJlkW9cD_872uOBcx9OiHh1MSc1F6S7JyKjKlMoCzpob79hh6eD8W8WVviPmGgAA8qWmClMiNp3g&oh=00_AQOC4L8EhKEDPamCz9C4Xn7x5RZHa2CQkIZU7D25HXmANA&oe=6AC30CA3",
+      "video": "https://scontent-fra3-2.cdninstagram.com/o1/v/t2/f2/m367/AQNXRuxV-OS1bkKpitCOZbrTaAjpIwcNOFJFAAZv-v8iemp8mDkgmhN0Ww5VUN6IouG3MBy9It6J9hC0rFNIHaO4Ww9nnYnjp1-dkcw.mp4?_nc_cat=111&_nc_sid=5e9851&_nc_ht=scontent-fra3-2.cdninstagram.com&_nc_ohc=w8wkmyqTTyQQ7kNvwHapbxs&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6NjQ4NTA4MDQ0MjA2MjA5LCJhc3NldF9hZ2VfZGF5cyI6NDM1LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTEwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=5ba5e99104dbb964&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC8yNTQ5MTMzOUI5OUQ3NzdEQTE1RjNGMjNDNzJFMEI4MV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xNDkwNjExMjM4NjI4NTQ0XzI5OTkxNjQyMzE4MzI3ODEzODgubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJoKC37mR9KYCFQIoAkMzLBdAW7u2RaHKwRgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gdl5p0BAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&edm=ANo9K5cEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQJGHWoHARV7v36PS1nKDIUKG69Nc-bvGwsn_Dfp_MVwIV9AsFUU4ccXoDHyrl8c1oKxsuY8GaYBEA&oh=00_AQMDOqy_HsyJeGKRcTTxF12Zpr5frwKKUqeX2Na92HXggA&oe=6AC2ED50",
+      "caption": "Spice up your meals! 🔥❤️ Red chili & raw mango chutney - perfect with rice, roti, or as a dip! 💡Tip: Wash…",
+      "fullCaption": "Spice up your meals! 🔥❤️ Red chili & raw mango chutney - perfect with rice, roti, or as a dip! 💡Tip: Wash & dry chilies thoroughly, store in airtight container in the fridge (no water contact) & enjoy for 2-4 months\n\n#HomemadeChutney \n#southindianrecipes\n#korvikharamwithmango\n#SpicyDelights #RedChiliLove #RawMangoChutney #IndianCondiments #FoodieFaves #RecipeInspo #ChutneyLover #Yum\n#ManthaFood #manthafood",
+      "permalink": "https://www.instagram.com/reel/DMZzJqKTzQT/",
+      "timestamp": "2025-07-22T08:23:45+0000",
+      "likes": 14,
+      "comments": 1
+    },
+    {
+      "id": "17887107288280548",
+      "section": "food",
+      "type": "VIDEO",
+      "src": "https://scontent-fra3-2.cdninstagram.com/v/t51.75761-15/503584622_18031663280676178_3281707173647686652_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=hSxZCoEdFDwQ7kNvwGFmKxV&_nc_oc=AdpVDgMf1KBNtRFXbZINSfQo_rMgmVDNLDNbGj23QncdxFmewrUxJc3YnD99WjTCsST77A7zRg-5u8k7BW_5T6Ff&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQL2nQ-UClezdpHdxmy_ckVn6YLWACuw21jqd7IFyJgz5KZt-uVhEHCNu35rjkRPi1Dy7jzVoMmEVw&oh=00_AQN_Nc7OiwwmSJFbSUTaMl7Ysxdk9aNjRCaiSexvt-Bd8Q&oe=6AC2F23A",
+      "video": null,
+      "caption": "Palli podi",
+      "fullCaption": "Palli podi \nPalli Podi a delicious and versatile spice blend! Can be eaten with hot rice and ghee, idli , dosa or as a seasoning for veggies and poha. The aroma and taste are incredible!\n\nIngredients\n- 250gms peanuts\n- 1 tablespoon (20gms) chili powder\n- 4-5 dry red chilies\n- 2 teaspoons (5gms) cumin seeds (Jeera)\n- 2 tablespoons (10gms) coriander seeds (Dhania)\n- 3 tablespoons (30gms) sesame seeds (TIL)\n- 5-6 cloves garlic (20gms) (optional)\n- 2 teaspoons (12gms) salt\n- 2 tablespoons (15gms) dry coconut (optional)\n\n1. Dry roast the peanuts, in oven (180C 12-15 mins) or gas top on medium flame \n2.Dry sesame seeds and dry red chillies in a pan until fragrant.\n3. Dry roast coriander seeds, cumin seeds for 1- 2 mins and desiccated coconut ( few secs)\n4. Let them cool completely.\n5. Grind the mixture into a coarse powder.\n5. Add the chili powder , salt and garlic to the powder and grind a bit. \n7. Store the Palli Podi in an airtight container.\n#PalliPodi #SpicedPeanutPowder #SouthIndianCuisine #IndianRecipes #SpiceBlend #VersatileIngredient #Delicious #Foodie #RecipeInspo #HomemadeGoodness #traditionalrecipe #ManthaFood #manthafood",
+      "permalink": "https://www.instagram.com/reel/DLGsCUeznb9/",
+      "timestamp": "2025-06-20T01:47:22+0000",
+      "likes": 10,
+      "comments": 0
+    },
+    {
+      "id": "17969228630906724",
+      "section": "food",
+      "type": "VIDEO",
+      "src": "https://scontent-fra3-1.cdninstagram.com/v/t51.75761-15/505425183_18030723689676178_8660566644398071368_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=twCd3kDrdSkQ7kNvwHaAzP4&_nc_oc=AdrA0ATA-YKZiBKEWxeN5PL7bR7_wQkQ7D9IjAIDDDUJRRJAjrt7kCG4k4yyN63V68f7NIl_3GvPn-WSQwVQiSJQ&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQJKlQSinS3ytfSebnYC_zK0zffJPWQ79WSdPG04tEd9YyMELS_35lfIOvE-fMZHTEsmCgd2uExPGA&oh=00_AQNwWYGNQCxlFZJSXPgCx1tRyQp33JmWRALoKt6GuszNjg&oe=6AC2E0A9",
+      "video": null,
+      "caption": "Challa Pulusu (Plain Kadhi) A comfort food for yogurt lovers — simple, quick, and absolutely satisfying! Pa…",
+      "fullCaption": "Challa Pulusu (Plain Kadhi) A comfort food for yogurt lovers — simple, quick, and absolutely satisfying! Pairs beautifully with both rice and roti.\nIngredients:\n* 1 cup yogurt\n* 1 tbsp besan (gram flour)\n* 1 tsp ginger-garlic paste\n* 1 tomato, finely chopped\n* 1 Small onion , finely chopped \nTempering:\n* ½ tsp mustard seeds\n* ½ tsp cumin seeds\n* 1 dry red chili\n* 1 green chili, finely chopped\n* ½ tsp turmeric\n* ½ tsp red chili powder\n* ¼ tsp hing (asafoetida)\n* ¼ tsp roasted methi powder (or few methi seeds)\n* Few curry leaves\n* Salt to taste\n* Oil for tempering\nGarnish:\n* Fresh coriander leaves\nNote: Add enough water while cooking, as the kadhi thickens upon cooling.\n\n#ChallaPulusu #PlainKadhi #ComfortFood #SouthIndianRecipes #YogurtLovers #QuickMeals #SimpleCooking #IndianFoodLove #HomemadeDelight #RiceAndCurry #VegRecipe #EasyIndianFood #TraditionalTaste #ManthasFoodPalette #AndhraCuisine #TeluguFood #ManthaFood #manthafood",
+      "permalink": "https://www.instagram.com/reel/DKwxxiZT_Sk/",
+      "timestamp": "2025-06-11T13:28:25+0000",
+      "likes": 12,
+      "comments": 0
+    },
+    {
+      "id": "18088229302616626",
+      "section": "food",
+      "type": "VIDEO",
+      "src": "https://scontent-fra5-1.cdninstagram.com/v/t51.75761-15/496007942_18026369729676178_1494497293750246634_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=TnhxMXaeWM8Q7kNvwHamHGD&_nc_oc=Adpb_R0YY8WolCNskRXflSH9oqx-SBkQMd1LmKTlQPdGwkyt9tLYy4E2Hb-5Hsyha6HyUQeh0kVqitraDD3gsMdA&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQLeAIN96zk5PdLIujvGFi_UMc4zQ3NHC8Ho-ireD7KNBRvOXAQCWW7Ti-qYjnOyDwuOHI1S4Rvgjg&oh=00_AQOoTp2cbbJic3DhCodLIQ8XyZqh4N8INrMASwfnL82jMQ&oe=6AC2E9A5",
+      "video": null,
+      "caption": "Perugu Vankaya (South Indian-style Dahi Baingan) A deliciously creamy, tangy brinjal (eggplant) curry with…",
+      "fullCaption": "Perugu Vankaya (South Indian-style Dahi Baingan) A deliciously creamy, tangy brinjal (eggplant) curry with a South Indian twist — a perfect comfort dish to pair with hot rice or rotis!\nIngredients: Vegetables:\n* Brinjal (eggplant) – 250 gms, sliced lengthwise\n* Onion – 1, sliced lengthwise\nFor Marination:\n* Thick yogurt – 1 small cup (100gms)\n* Besan (gram flour) – 1 tablespoon\n* Turmeric powder – ¼ tsp\n* Ginger-garlic paste – 1 tablespoon\n* Salt – ¼ tsp (or to taste)\n* Coriander powder – 1 tbsp\n* Cumin powder – ½ tbsp\n* Jeerakharam (or red chili powder) – 1 tbsp\n* A little oil for coating\nTempering:\n* Mustard seeds – ½ tsp\n* Cumin seeds – ½ tsp\n* A pinch of hing (asafoetida)\n* Curry leaves\nInstructions:\n1. In a bowl, whisk the yogurt with besan until smooth. Add ginger-garlic paste and all the dry spices. Mix well.\n2. In another large bowl, toss the brinjal and onions with a little salt and oil. Add the yogurt-spice mixture and coat everything well.\n3. Heat oil in a pan, add mustard seeds. Once they splutter, add cumin seeds, hing, and curry leaves.\n4. Add the marinated brinjal-onion mix. Cover and cook on medium flame until the brinjal turns soft.\n5. Remove the lid and cook uncovered till the oil separates and the gravy thickens. Garnish with fresh coriander leaves.Tips:\n* If using a steel pan, stir frequently and cook on low-medium heat if using less oil.\n#PeruguVankaya #DahiBaingan #SouthIndianCuisine #BrinjalCurry #ComfortFood #YogurtCurry #HomemadeDelights #IndianFoodLovers #VegetarianRecipes #SimpleIndianFood #SpicyAndCreamy #RiceAndCurry #EggplantLovers #TraditionalIndianFood #FoodWithLove #FoodieFavorites #TeluguVantalu #currylove #ManthaFood #manthafood",
+      "permalink": "https://www.instagram.com/reel/DJQfuWUTeoO/",
+      "timestamp": "2025-05-05T04:07:34+0000",
+      "likes": 15,
+      "comments": 0
+    },
+    {
+      "id": "17920783839074657",
+      "section": "food",
+      "type": "VIDEO",
+      "src": "https://scontent-fra5-1.cdninstagram.com/v/t51.71878-15/491424719_644405088581560_1521877366579060361_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ZNqGDpLZdD0Q7kNvwGaXt_U&_nc_oc=Ado0SPNSG4u_Y0QZBQpA0-oTRcgb7cbdSqrPtEjrmsgdevMT_DVX132Zxs_jODZqtt4Fz0kjLjX8Ph3roHeLEHCf&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQJCkVIbtr_RlVovWPCoIKHSx4HS0ts186FpBEQUqOqIn4fUyvZi5z5W0_0Cp3i4AWjerYPN1I462w&oh=00_AQONMq5E-En5W6txNGhbnTQ8DGvLPJGuT4OUTW93vfmkFg&oe=6AC2FB78",
+      "video": "https://scontent-fra3-1.cdninstagram.com/o1/v/t2/f2/m367/AQMKw-n4Ncwa07108e_iSHKcN5xVEBi60MWo4X2QLyBDdZNIKlVFfPrPRKd3WlumLIOl7uSLyE3xDUCtb1T9bPtr0SUghQdaCPHM4nc.mp4?_nc_cat=106&_nc_sid=5e9851&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_ohc=dyD8XSNEyykQ7kNvwEMXbA8&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTU3NjExNTcyNjM5NjMzNSwiYXNzZXRfYWdlX2RheXMiOjUyMywidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjQ4LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=14bfe30c9c93cc81&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC9COTQxRkQ5NEIzODI5QkQ2MzIxNzcwNDQ5MDc2RUI5MF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMzExOTgzMTk5OTAxNzIxXzY5MjE1MzcyMTM4MTY2OTUxNTIubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJt6u-Z-B3swFFQIoAkMzLBdASGZmZmZmZhgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gdl5p0BAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&edm=ANo9K5cEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQLvP33Pu8VaVyXKXkhTEcvd9VjeoLtRmsdrDRB51D6CcYiLm7pb_qimybvyIsmI1r9PGb1zPMdVQw&oh=00_AQPGXNxfV6zmF3W_3q6krsYiMLGpIazaqZyvD9CdUYvUdA&oe=6AC30453",
+      "caption": "Homemade Indian Yogurt (Curd/Dahi) Yogurt is an everyday essential in almost every South Indian meal! While…",
+      "fullCaption": "Homemade Indian Yogurt (Curd/Dahi) Yogurt is an everyday essential in almost every South Indian meal! While it may seem simple to many Indians, this recipe is especially for my lovely Chinese friends who enjoy Indian yogurt and want to try making it at home.\nIngredients:\n* 1 cup fresh milk (full cream or low fat)\n* 1 tbsp fresh yogurt (as a starter culture)\nMethod:\n1. Boil the milk thoroughly—this step is crucial whether you’re using fresh cow milk or pasteurized milk.\n2. Allow the milk to cool until it’s warm (not hot). Optionally, strain the milk to remove the thick cream layer.\n3. Add 1 tablespoon of fresh yogurt to the warm milk and stir gently.\n4. Cover the bowl and keep it in a warm place for 5–6 hours or until the yogurt sets. (Setting time depends on your room temperature.)\n5. For a quicker set, place a dry red chili on top—an age-old traditional tip!\nNote: A good starter culture is key! The best results come from fresh, well-set yogurt. If you don’t have any, you can make a basic culture by adding a few drops of lemon juice or a slit green chili to warm milk. Let it sit in a warm spot for around 12 hours until it curdles. This can be used as a starter for your first batch—though it’s not suitable for eating on its own.\n#HomemadeYogurt #IndianCurd #YogurtRecipe #DahiLovers #IndianKitchenBasics #CurdMaking #HomeCooking #HealthyEating #FermentedFoods #IndianFoodLovers #KitchenTips #SimpleRecipes #YogurtLovers #MilkToCurd",
+      "permalink": "https://www.instagram.com/reel/DI26joVTWJn/",
+      "timestamp": "2025-04-25T05:39:23+0000",
+      "likes": 17,
+      "comments": 2
+    },
+    {
+      "id": "18129756778710687",
+      "section": "art",
+      "type": "VIDEO",
+      "src": "https://scontent-fra3-1.cdninstagram.com/v/t51.82787-15/776496801_18083846957676178_8108768304168775550_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=SmcQhPEynIMQ7kNvwFuQ59g&_nc_oc=AdoTBJxSYaW6I4GBn6ULxNh34Sf_S0RVAKJ63LjDcCBAYYUhxgJZF4MROqrPsQ7oqzDHTFzglQDmVj7odzapoKaE&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQKs214ZPpxFLHM6nR4v5ByToLpSVAHtqyjkVvGBKcnLbUG3h4qGaf-KWt3F1PoMhuzPHj36ykIICw&oh=00_AQN9m4MUjwxBYsuxmpDDBp0HNoRR9S7PjYLkz9gKlcuGbw&oe=6AC2E6E6",
+      "video": "https://scontent-fra5-1.cdninstagram.com/o1/v/t2/f2/m86/AQO0j7Vgagp1OXy37svynqAfZrl3b18O2oMSHjD8MdhTkhUJoR26aXcEu2UIQJQ-k_7kpSD5t-ZZYW0gFRhYkG3VK3YuIKaTKPbY47E.mp4?_nc_cat=100&_nc_sid=5e9851&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_ohc=Uu37SeMDruQQ7kNvwGDlIf6&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjE1MDcxNDk2NjMyNDAzMCwiYXNzZXRfYWdlX2RheXMiOjQ2LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MzIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=d46d410d2606bf65&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9DQjQyMDRFQkRGRTBFRUM2MUIyMDI5QjkwMTA3RTE4MV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYUWlnX3hwdl9wbGFjZW1lbnRfcGVybWFuZW50X3YyLzdBNDI5RTVGREQwRjA3NEI5MTg5OUUxRjU3MTZBOTkxX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACb8zKWZi4TSBxUCKAJDMywXQEBIcrAgxJwYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HZeadAQA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&edm=ANo9K5cEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQINcPpACvkXLbvwpF1DPOzkb1S0ScDedA4tSXSQ22tzeTtNoWWFC6wFxmt496aZ8yiKFVI-W5t3uA&oh=00_AQMLZGWrtIUMrDoSNbfFUPmYgEhfRpCMLUltL76vIQIEiw&oe=6ABEF529",
+      "caption": "After 1.5 years, the brush touched colors again 🌈… Dot kolams are therapy ✨… each dot a pause, each line a…",
+      "fullCaption": "After 1.5 years, the brush touched colors again 🌈… Dot kolams are therapy ✨… each dot a pause, each line a breath. So relaxed to make them, so joyful to share 🌸 Art may pause, but it never leaves the soul. Sharing after a long gap ✨.\n\n#KolamDesign #WoodenArt\n#ArtComeback #CreativeJourney\n#ColorsOfIndia #ManthaArt #manthaart",
+      "permalink": "https://www.instagram.com/reel/DcDMQ71y9dw/",
+      "timestamp": "2026-08-15T06:02:16+0000",
+      "likes": 6,
+      "comments": 0
+    },
+    {
+      "id": "18066998633120714",
+      "section": "art",
+      "type": "VIDEO",
+      "src": "https://scontent-fra3-2.cdninstagram.com/v/t51.82787-15/513306206_18032495867676178_3177563029422972391_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=VLfEi9QuK6UQ7kNvwG10zbJ&_nc_oc=AdqsuPPieXRvWknY6WMw7eFtI-4MZiio0KvLIr_Q9fAEapOuzy7R7RdP61AP5M-pGcM0gOtCLOyG5rX7Cwp_XvW6&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQJklDvDvON8I52ob6_PxqQowYwcDrh_68_ohlR2z489UsukhgSLiAm_pPWu2uiqmQpJBHoAhX9wnA&oh=00_AQOeia9HN7gakBs-oft2J_qc_lGbnvSYIAFDhzczBdCj9A&oe=6AC2E93E",
+      "video": "https://scontent-fra3-1.cdninstagram.com/o1/v/t2/f2/m367/AQMVJnO3x9gBnaD57BrEgg2JRyTFmvQuo9o8obnpGwVDGWkK4cSilYSIX4cFH1cM6LT77IaydD5n-GrfbJTIgtaInLHZhb-b7XcZQR4.mp4?_nc_cat=105&_nc_sid=5e9851&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_ohc=P44N7UFPoZUQ7kNvwHfxRth&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6NTc4ODcyNTM4Mzc2MTE3LCJhc3NldF9hZ2VfZGF5cyI6NDU5LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTcsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=379854c7e3b69173&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC9GNDRFQjBENDAyRUU5MzMwQTNCNzJGQjgzQzU1QTBBMV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMDQ2OTYyOTIwODU4ODU2XzMzNzk5ODA4ODEwNjE4MjkwOTUubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJuqeqcDonocCFQIoAkMzLBdAMYhysCDEnBgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gdl5p0BAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&edm=ANo9K5cEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQL73dZWb9uYI_v_mluWd-MQMpAM5gVhO8Y4oE9zFZQ5SMK7XW8dv_99eB5fHwz4Igjmeq-wKUAK5A&oh=00_AQPVpBnK-fLFX93Vmu8k65dOvjcAtiyM1Q1rDLwPUq19Pg&oe=6AC2E0AE",
+      "caption": "Rath Yatra vibes! Jagannath, Balram, and Subhadra - adorable and divine 🙏❤️ Mixed media art on wood .. (Se…",
+      "fullCaption": "Rath Yatra vibes! Jagannath, Balram, and Subhadra - adorable and divine 🙏❤️ Mixed media art on wood .. (Set of 4)\n#RathYatra #Jagannath #LordJagannath #PuriDham #OdiaCulture #MixedMediaArt #AcrylicResinArt #WoodenArt #DivineArt #SpiritualVibes #FestivalVibes",
+      "permalink": "https://www.instagram.com/reel/DLaJwfzTSab/",
+      "timestamp": "2025-06-27T15:05:50+0000",
+      "likes": 11,
+      "comments": 0
+    },
+    {
+      "id": "17966825810926265",
+      "section": "art",
+      "type": "VIDEO",
+      "src": "https://scontent-fra3-2.cdninstagram.com/v/t51.82787-15/512276325_18032370431676178_4043927699682503864_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ad6FHEcOagoQ7kNvwFL5iJR&_nc_oc=Adoe5YvOuq4qmxseEWR77Z-DARgB5r8_L5q4AKN0NjKSHxLiynGSZG8HrRmoqAIdOX_MCwheFEOz3OhpUtSgQY1O&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQKr7QF9zcfoThRYNl3P7iDiOCX36mRXCZPaDxqRLpbsY8RB2hmcFKxbY7cGmwarpkqTM-8HAPY-Ww&oh=00_AQNlozqKysX2b744pRszphYaKw9hNxzLzTTVC8G4g2aGTQ&oe=6AC2F8FB",
+      "video": null,
+      "caption": "Nine colorful butterflies, one happy wall.🦋✨ Dot work on wooden butterflies in different sizes — feeling l…",
+      "fullCaption": "Nine colorful butterflies, one happy wall.🦋✨ Dot work on wooden butterflies in different sizes — feeling lucky to see them flutter with color!\n\n#DotWork #ButterflyArt #WallDecor #Handpainted #ColorSplash #WoodArt",
+      "permalink": "https://www.instagram.com/reel/DLXOzS4T9Zc/",
+      "timestamp": "2025-06-26T11:52:20+0000",
+      "likes": 14,
+      "comments": 0
+    },
+    {
+      "id": "17903152413069050",
+      "section": "art",
+      "type": "VIDEO",
+      "src": "https://scontent-fra3-2.cdninstagram.com/v/t51.75761-15/502757165_18029565356676178_7066682447162305108_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=0ZTTR1aY9CcQ7kNvwER7RST&_nc_oc=AdqhVYVHnwwm3B9DL3VL1W60MpxLuuAmK7oYBXWppN-VfnJNQP-nllLYu_V4oF-VOXczbTGaTJIIzgcZgW9EI7XU&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQIGGiF1Y-UtaqsuhlN4ZO1q14bfznU8iR8p7jrquazkQ_DDi30qRYOao_RPChGqWz-zTL30nXvn6Q&oh=00_AQM1GeePv5KXIzuVwwYWuySZuOtBIbXdAUSd1tf-oi8oTQ&oe=6AC2F220",
+      "video": "https://scontent-fra3-2.cdninstagram.com/o1/v/t2/f2/m367/AQNsnKXpysNdO-10AZUeg49kw_NU7OIQ-BV4OZxQsEAFbakh4bhRle4phiSz7uGcVk5grWY1NBJIP-I0KVW27uzLSQGCzHgrnUuRkvo.mp4?_nc_cat=111&_nc_sid=5e9851&_nc_ht=scontent-fra3-2.cdninstagram.com&_nc_ohc=cIEnDVq8oCsQ7kNvwHY0wqU&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTIxMDY5NDA0MzU4NzUyNiwiYXNzZXRfYWdlX2RheXMiOjQ4NiwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjExLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=d416385a7843ed4e&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC85NzQxQjc1RTNCREYyQTc4MjNCREM1RDdENDJCRkE4M192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC80MDkxMjMwNTE0NDkyNDM5XzM0OTYyNDAyMTE5NzkyNjYwMDAubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJozPssbVx6YEFQIoAkMzLBdAJ92yLQ5WBBgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gdl5p0BAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&edm=ANo9K5cEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQJaf6IMklDheTukSf8LjZG35ZK3QkK_Tohlqgjlt121wmZ7BO7fexy03kub7aIOGY_PiS6TG4RmDQ&oh=00_AQPvUQCyHZraVJwfp5ApZm4q1oa3i2rgLuxAJR7bMEEiwA&oe=6AC2EBD4",
+      "caption": "Another pair of 30 cm dotwork masks added to the collection. 🎨",
+      "fullCaption": "Another pair of 30 cm dotwork masks added to the collection. 🎨\n\n#DotworkArt\n#WoodenMasks\n#HandpaintedArt\n#TribalInspired\n#DotPainting\n#MaskArt\n#ArtOnWood\n#30cmArt\n#DecorativeMasks\n#HandcraftedWithLove",
+      "permalink": "https://www.instagram.com/reel/DKXLwzFzkA5/",
+      "timestamp": "2025-06-01T14:54:14+0000",
+      "likes": 14,
+      "comments": 0
+    },
+    {
+      "id": "18081555694682885",
+      "section": "art",
+      "type": "VIDEO",
+      "src": "https://scontent-fra3-2.cdninstagram.com/v/t51.75761-15/497788086_18027395588676178_6285987916986234817_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=ZEgUtoSIl7IQ7kNvwFxQ034&_nc_oc=AdqWi_zfwXjbPU3vfel7yvC246upouHrggg58CTrPJ7OtIybkCZcDUnWTrZRUhf1uxUiIo0pux5aTakoXIklBOg0&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQKE8r3sEyy0aDrmYnEne6_bPRVXJHZYIAdL9bHk9Zu96ewteqNuGxFjZDyXBLPpfrPqQjz1STLA0Q&oh=00_AQPVfbtSdKQL99OZ4z5kbyhtR9tO1dIbiuJjGsQIgAOfpg&oe=6AC2EECD",
+      "video": "https://scontent-fra5-1.cdninstagram.com/o1/v/t2/f2/m367/AQMbzLj6CIFEuwSWUYXjO8VN7ZTfgyXg_EgwkZ_WPGmz-FY4FWaqMWdYXKjsKtLGUrghTBUoDR-eVrvoPi5wxt_xfrazKRIW4iN0gIo.mp4?_nc_cat=110&_nc_sid=5e9851&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_ohc=IBzCWmwtMpcQ7kNvwEIDulU&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6NjM3MzYyNzI1OTY3NjM2LCJhc3NldF9hZ2VfZGF5cyI6NTA0LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MzIsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=fef811a19588533c&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC9BMjRFRjJGNTE5QTVDQ0YwOUJGQjYzOEQ5MkQ5MURBNF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYRmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC82NjcyMDUyMTYxMjg4MDBfMTk2NDMwMjQzMzE0ODg3MzQ2Mi5tcDQVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmqNz-rbLroQIVAigCQzMsF0BAIgxJul41GBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&edm=ANo9K5cEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQIBogw3wvbYqciB3dLPnvaQQM4bTARd7ohmM13b4nE-6AQxiRf4_e3YDptKiCoWx36XPEESx_8UXA&oh=00_AQPaZmW7d1I7OIsBaN3AHFY9VroWzV10dWU2EeL4S7ZsEA&oe=6AC3051B",
+      "caption": "Another circle of calm and color — completed dot work on this 40 cm wooden plate. Each dot placed with quie…",
+      "fullCaption": "Another circle of calm and color — completed dot work on this 40 cm wooden plate. Each dot placed with quiet focus, turning the process into a peaceful pause, not just a painting.\n#DotArt\n#DotWork\n#MandalaArt\n#Pointillism\n#AcrylicArt\n#WoodenArt\n#Handpainted\n#ArtOnWood\n#MindfulArt\n#CreativeJourney \n#WoodenPlateArt\n#DotPainting\n#AcrylicOnWood\n#WoodArt",
+      "permalink": "https://www.instagram.com/reel/DJoKfxOTNCH/",
+      "timestamp": "2025-05-14T08:47:06+0000",
+      "likes": 19,
+      "comments": 2
+    },
+    {
+      "id": "18044231324407752",
+      "section": "art",
+      "type": "VIDEO",
+      "src": "https://scontent-fra3-1.cdninstagram.com/v/t51.75761-15/496355752_18026700245676178_3106360281770644159_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=9023vMHCv0MQ7kNvwEUz1zf&_nc_oc=AdrihI8qCVjAkTYSyTnCwRUpbniq9uKCCLbt2Hg80k-r6nsCAiknevgbvDgdGZX2Zu6sqHLq3NpC57KHXpMSZPqe&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQIlsS1c4Pnjrnlzq_yr1cA_94kplPkv871AcKn2tZQDpu2qvnS0MSjzG0_RsIVuMR6HiQDO9uugRg&oh=00_AQOS-xW4GHtaZuCzpW2542mdDi2oL3_NR7C0leqp7NgOLQ&oe=6AC2FD2C",
+      "video": "https://scontent-fra5-1.cdninstagram.com/o1/v/t2/f2/m367/AQMWSLdMlKcj2EcqLNFBTUdUDfy626KyvUH3U95c0RgvPfkfdxvoclnhx0Mf_Lw3se9ZDeGxdKKuBmgz5e5NsQS6QULFl-Rpf9y4Ui4.mp4?_nc_cat=102&_nc_sid=5e9851&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_ohc=6f78zOCIUmcQ7kNvwEKCJzt&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTI3Mzk2NDE0Mzg0OTQ2NSwiYXNzZXRfYWdlX2RheXMiOjUxMCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjI0LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=84db0fe8f3984304&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC8xMzRCRjFBQUYzNTVERDE2NTEzOTE1RTEzMUY1NEM4QV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMzg0MDk4Mzc2MDcwNjMyXzI4NjM3NDA4OTUyNTUzNDUwNTYubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJvK_gcS8qsMEFQIoAkMzLBdAOEzMzMzMzRgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gdl5p0BAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&edm=ANo9K5cEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQKmfcD0t4ZRvJ-6MKWz92-KPAJEltzGabkBKRHlWKHyOVAHlleM9yIDpMpaBmNHBN1NkoVPZRv0pg&oh=00_AQPC6Y4uv6AbTut8mqzNHFXKymHqqqTI4YfYZni5lD1cxQ&oe=6AC2FC0B",
+      "caption": "A circle of patience, color, and calm — finished dot work on this 40 cm wooden plate. Every dot holds a lit…",
+      "fullCaption": "A circle of patience, color, and calm — finished dot work on this 40 cm wooden plate. Every dot holds a little intention, making it more than just art — it’s a meditative journey. #DotArt #DotWorkMandala #WoodenPlateArt #HandmadeDecor #DotPaintingLove #MindfulArt #ArtOnWood #MandalaVibes #CreativeTherapy #ColorfulCalm #ArtWithSoul #40cmArt #CircleOfDots #OneDotAtATime",
+      "permalink": "https://www.instagram.com/reel/DJYfN6zTZIN/",
+      "timestamp": "2025-05-08T06:32:09+0000",
+      "likes": 19,
+      "comments": 0
+    },
+    {
+      "id": "18070651948928568",
+      "section": "art",
+      "type": "VIDEO",
+      "src": "https://scontent-fra5-1.cdninstagram.com/v/t51.75761-15/494691524_18026070449676178_2727524086257635132_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=djuzdu8pWx4Q7kNvwHkgV2X&_nc_oc=AdrOWD0d_fxlR-_OZtF0vWMlxHi6xq_wX0Op6SIEXuv3lL09vI5fStTtLM6pX2nZUn517bePPl1IFev092J9wGHf&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQLZbp_upptaZc2E7MhzRGHlKEcDRNXAoG4TxdU9jJiWX3-JudVyuc39WOHXwV8_lFXirIjNH7d7SA&oh=00_AQOmtpgdMxm5ntqkZgzlo6IAyF0POFKJtTPPQJgdBJI9VQ&oe=6AC2F615",
+      "video": "https://scontent-fra3-1.cdninstagram.com/o1/v/t2/f2/m367/AQOO6Vu_Dut8LJG-IRMXIe3Fund-JvVQ6HVmv3kzj9GydkRcUz-eYc-WW5Fzf6_XkLXWcMYNU5KbYQJlJrAoyL3j4YKfEcnTGIp4zII.mp4?_nc_cat=103&_nc_sid=5e9851&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_ohc=ao9zJbdAB9UQ7kNvwHs013l&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6NDA2MzY3ODU1NzIwOTQyMiwiYXNzZXRfYWdlX2RheXMiOjUxNiwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjE1LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=40f306354eac4c0&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC82NjRDRDgzMEJEODlGRDVDRjBFRjhFRjVCMjc0RTRBRF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYRmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC82NDg2ODYxOTgxNTEyNjRfMzExNDEyOTE0MDM2Njc5ODkxOC5tcDQVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmnI2Szpz5tw4VAigCQzMsF0AvZmZmZmZmGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&edm=ANo9K5cEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQID_Dm328To-wlOjhK-2MDlS5PZ_i_DMhFAlMKwp2UYYwlp1BEKvnNPf-mCsJTEa3z0jp1mxFMX-A&oh=00_AQPPnhJr9TAFq4Q-B_Gnq2Qz3J3OisQNIJ7JcZWTCKgK1w&oe=6AC312C8",
+      "caption": "Finished a new set of wooden masks — Big  52 cm and Small 32 cm — adorned with calming, earthy-toned dot wo…",
+      "fullCaption": "Finished a new set of wooden masks — Big  52 cm and Small 32 cm — adorned with calming, earthy-toned dot work. Featuring symbols of strength, transformation, and longevity like elephants, butterflies, and tortoises, each piece radiates peaceful, positive energy through subtle colors and simple patterns.\n\n#WoodenMasks #DotArt #EarthyTones #HandcraftedDecor #PositiveVibes #SymbolicArt #ElephantArt #ButterflyArt #TortoiseArt #TribalVibes #WallDecor #ArtOnWood  #DecorWithMeaning  #SpiritualVibes #CraftedWithLove #MaskArt #NatureInspiredArt #CalmingColors #ArtTherapy",
+      "permalink": "https://www.instagram.com/reel/DJJxMg3TmLz/",
+      "timestamp": "2025-05-02T13:21:06+0000",
+      "likes": 16,
+      "comments": 2
+    },
+    {
+      "id": "18001862321775235",
+      "section": "art",
+      "type": "VIDEO",
+      "src": "https://scontent-fra5-1.cdninstagram.com/v/t51.75761-15/494131180_18025711529676178_8156399096764506841_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=jHiecrSHuMQQ7kNvwHju8lj&_nc_oc=AdpgZg3DEfjpIC-XDQ7JwOBFizBtPDL65jm1RuK7qX8b7Q7qEVrb9kheU4uf-eLnmw3473DkuoDwjFdEq7IkVIgd&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQKSW7zD1yeDKLtT4b_Zw_Q45vQkPzvOXEROxutR7v-qzNkbeC0eWfgmIbTy08J9J7IQf4_UkhMPuw&oh=00_AQNvitbU_ZzXDAYVZB0jTuAPQIG1RX9lvH_NZ_ImFiDKew&oe=6AC2EABA",
+      "video": "https://scontent-fra3-1.cdninstagram.com/o1/v/t2/f2/m367/AQNZdPXbkmoNjTVvfHFO925Dz77BQ9e25n6yEI-6c3LpRz8bSK22uq_v4Po19Mz1hDyVlCmoRLMHmsPfuzxeIyQMJBw3KKc2P-uhm2Q.mp4?_nc_cat=105&_nc_sid=5e9851&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_ohc=YavoCXV22AIQ7kNvwHWvklm&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6NDU4NzE2MDQzOTcxNTE2LCJhc3NldF9hZ2VfZGF5cyI6NTE5LCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MjQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=1829b9fac64c83e1&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC8wNjRFMUE4MkQ4REJGMDQ3OUQ0QTkzNDk1QURCODRCQV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMzc0NzA4NzA3MDY3NzMyXzMwNjc4OTEyMDQwNTc4MDYxMzkubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJviu1O3kzNABFQIoAkMzLBdAOLMzMzMzMxgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gdl5p0BAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&edm=ANo9K5cEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQL887umyMHJoWKbTpHU68eo0DlPunnWhnFAsfYVsdhN1qPisnQX5_6atw-2Jhp6UbrjTlZdu-9Blg&oh=00_AQOcVYGozFG7MFW9Khrf3iD6oF9kbALFm3M4p3FtHVIVqQ&oe=6AC2F742",
+      "caption": "A little piece of art that sings with the wind! Hand-painted 41 cm bamboo wind chimes in dotwork  #WindChim…",
+      "fullCaption": "A little piece of art that sings with the wind! Hand-painted 41 cm bamboo wind chimes in dotwork  #WindChimes #HandmadeArt #PositiveVibes #DotWorkArt #BambooArt #ArtThatSings #VibrantVibes #HandcraftedWithLove #DecorGoals #CreativeJourney #SoundOfArt #HomeDecorIdeas",
+      "permalink": "https://www.instagram.com/reel/DJBWKoGzxAR/",
+      "timestamp": "2025-04-29T06:50:45+0000",
+      "likes": 16,
+      "comments": 0
+    },
+    {
+      "id": "18339133234082323",
+      "section": "art",
+      "type": "VIDEO",
+      "src": "https://scontent-fra5-1.cdninstagram.com/v/t51.71878-15/503506263_1232266905057485_3946665840094572185_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=4xBrhAZZwnkQ7kNvwFeU9Is&_nc_oc=Adr6lT-WoD7hCrJheLOX3pcJcS0VXbE_Q-P06eBGLIMxOA86uKiVeFKA2cIxq0nwQPjTjTwoeX2d56CwhkvmlQcT&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQIISyDIW5_chSLBFSV05bFXtZiwKr4h07Se59Rmj5hVSezdGAe3KOt0VD1mU2TEjt-Z3VAzgs2BJA&oh=00_AQO574TbLhqBiD0eNTDEvvJRGZsWfasAsG0sY_8NU864Kg&oe=6AC2E30A",
+      "video": "https://scontent-fra5-1.cdninstagram.com/o1/v/t2/f2/m367/AQOj2o5r2sssc03L-HSqW5zSyX_zlrQM6l4J6OZ9Ghz6JWKLcjcUDsbuzW5eWAENxHNKzFHE802nNVdmvFgslnl4Lo6N4bOvr7CHoQQ.mp4?_nc_cat=110&_nc_sid=5e9851&_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_ohc=7easiFOcCV0Q7kNvwEvIQ6P&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTE5NDU3NDQyNTQ5MzQwMCwiYXNzZXRfYWdlX2RheXMiOjUzOCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjI1LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=2e36a1391df9dd2c&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC9ENTRERTIwRkJGMzEyOUZDMUE1OENBNDlFNEVCN0VBMl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMjQxMDE4MjcxMDgxOTEzXzcyODMxODc5MjI0MDMzMTY4NzEubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJrC-0ISxnZ8EFQIoAkMzLBdAOVU_fO2RaBgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gdl5p0BAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&edm=ANo9K5cEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQJxSCbJmdMOBYJeRdJQ3PVT_WFMPP8vAGtkaQ5A8OLieJ_o_moMETcwVG3UtEsGDC6qDzny3kGnYg&oh=00_AQNTLIFT0BQCirOx0h3OPL6_2juJ3UuzG-exkq613u11Lw&oe=6AC2F1AF",
+      "caption": "Another pair, another story—dot by dot. New 50 cm masks completed! #DotWorkArt #MaskArt #DotPainting #HandP…",
+      "fullCaption": "Another pair, another story—dot by dot. New 50 cm masks completed! #DotWorkArt #MaskArt #DotPainting #HandPainted #ArtTherapy #Pointillism #PatternArt #50cmMasks #DotWorkMasks #ManthasArt #NewArtPair #MaskCollection #AcrylicOnWood",
+      "permalink": "https://www.instagram.com/reel/DIRLV6ETdBd/",
+      "timestamp": "2025-04-10T13:52:27+0000",
+      "likes": 25,
+      "comments": 0
+    },
+    {
+      "id": "18061157336310069",
+      "section": "art",
+      "type": "IMAGE",
+      "src": "https://scontent-fra3-1.cdninstagram.com/v/t51.75761-15/486264266_18021647384676178_4709221765178245454_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=cenWgS_l3xIQ7kNvwFgFTaF&_nc_oc=Adpu-xKPwx1oDuJUUlxl5RyK6P0U_J9OK8VfY4JFyCqxy8z3G_aDx2x4A9rWYXi-pAhJel1VLHiubPhc5cjDp-Gp&_nc_zt=23&_nc_ht=scontent-fra3-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQIF8Z0MKl3OUNjIDpFZXWcZuB6_oVZ9HWXrhf3nAIudksb9ZZgfCBt5d1_O0P4h7JNUGlZTYH0KWA&oh=00_AQMVnVGuUApTzDMXPqn-KpINpdXI5-O9c18Fk1ez94KCsg&oe=6AC31232",
+      "video": null,
+      "caption": "Infinite forms, endless charm—Ganesh is divine in every way! A simple yet soulful abstract Ganesh in oil on…",
+      "fullCaption": "Infinite forms, endless charm—Ganesh is divine in every way! A simple yet soulful abstract Ganesh in oil on wood, bringing blessings and beauty together. ✨🙏🎨 #ArtOnWood #MinimalistGanesh #GaneshBlessings #OilOnWood #HandcraftedDivinity",
+      "permalink": "https://www.instagram.com/p/DHfeN_TzsA9/",
+      "timestamp": "2025-03-22T06:34:58+0000",
+      "likes": 21,
+      "comments": 0
+    },
+    {
+      "id": "18040403330111847",
+      "section": "art",
+      "type": "VIDEO",
+      "src": "https://scontent-fra3-2.cdninstagram.com/v/t51.71878-15/503999570_1823056274917617_4976345847655971926_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=2AYhBjL57ZMQ7kNvwEwqk6f&_nc_oc=AdpH3m-zMt7AAhg8eCxVUMyzkxaJZL8H0wiQ_asVdiYTAH_DFfy_H5psc-2xteblHckaik8zG8tgsfxNqg9jrUDv&_nc_zt=23&_nc_ht=scontent-fra3-2.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQKr_USVawQyVw5Tba9fcMKsTTnQLvblWHEaDDR5QpjcU_b-V4D8ADYa0XMhEIkxm3tcYJWiXtdCFQ&oh=00_AQNPJDGCt1OeRA8kQMuDYJIjNO6pAks9tI57PAx0U30qmA&oe=6AC2F718",
+      "video": "https://scontent-fra3-2.cdninstagram.com/o1/v/t2/f2/m367/AQPPPCul2sWdL_jyZy8ow4vakAg-w2ByXZKJ8i1Lbx7Umjlr2Rw1BfmykZ2saDQvtbc7ScFcZjkgmMQn1TxIzQz0iF9NDcLyBtg3iVU.mp4?_nc_cat=107&_nc_sid=5e9851&_nc_ht=scontent-fra3-2.cdninstagram.com&_nc_ohc=Wt-yoA2K7VEQ7kNvwFVSLfE&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc0MTA3MzY3OTc4MjU0NCwiYXNzZXRfYWdlX2RheXMiOjU5MiwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjE3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=17fb78687867e895&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC80MTQxQUU0RTMxNkM2RDIxQkE3NjI1MzJCRTQ4Nzg5NV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8zODMxNDk5OTU3MDczMjUyXzM1MDczMDM1OTIxMTQ2MjkxNDEubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJqDKsOPp35cGFQIoAkMzLBdAMap--dsi0RgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gdl5p0BAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&edm=ANo9K5cEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQLkNXACZmFT1SAhzgIT2eLDqNuoffrs4j_iYtHOnM3AhGh9ZPAPp-chcPVjofLd26MfKjStlp2GRw&oh=00_AQM_2jteb6Vtg-deVmiDbaRLaDFuFyC6jEue8eBanxyCKA&oe=6AC308D0",
+      "caption": "Little moments, big love! 🐘❤️ Tiny 13x13 cm acrylic painting on wood.",
+      "fullCaption": "Little moments, big love! 🐘❤️ Tiny 13x13 cm acrylic painting on wood.\n#ElephantLove #MotherAndBaby #AcrylicPainting #WoodArt #TinyArt #HandmadeWithLove #Dotwork #ArtOnWood #AnimalArt #CreativeJourney",
+      "permalink": "https://www.instagram.com/reel/DGFw3xPTdMq/",
+      "timestamp": "2025-02-15T10:26:49+0000",
+      "likes": 13,
+      "comments": 0
+    },
+    {
+      "id": "18065953159778671",
+      "section": "art",
+      "type": "VIDEO",
+      "src": "https://scontent-fra5-1.cdninstagram.com/v/t51.71878-15/503107418_1515025869475679_1750171554379042407_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=A9ksY4kd_TcQ7kNvwHOix8U&_nc_oc=Adoare-6kqXMNucQhbbvw2LHABbPC0nqMSyAIaG3V75R_VAQCxH-fSfC0p1fvG_j_tl0iV8MiTBR3MxmnDT3IzkL&_nc_zt=23&_nc_ht=scontent-fra5-1.cdninstagram.com&edm=ANo9K5cEAAAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&_nc_tpa=Q5bMBQIGG08CxY1849Cs1RTq2KX9aYm6RYMDW3iK9Ssnxo79-KwNRA1mCu2YQXPDHO0ko4TUJa6L_1B45A&oh=00_AQMM_vu-aO1RpigiptKPP0p2ctVqhadjPxhWhoBZGiBz3g&oe=6AC2DCD5",
+      "video": "https://scontent-fra3-1.cdninstagram.com/o1/v/t2/f2/m367/AQPDouAwk1XGxIdO0ChC-_56YqFc_gRyQDTvXb6AFScSf2oKFHvdZLttTMxM9ckHbHKIry7YvO8WZacSxuy2GnmE4pvcXFIUtsxIDp8.mp4?_nc_cat=103&_nc_sid=5e9851&_nc_ht=scontent-fra3-1.cdninstagram.com&_nc_ohc=hKzJ9Uuzp30Q7kNvwGDEeoI&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTM5OTA2OTk4NDQwNDYwMiwiYXNzZXRfYWdlX2RheXMiOjY0NywidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjQxLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=f3a13e4b9d0348b4&_nc_vs=HBksFQIYQGlnX2VwaGVtZXJhbC80QzRCMjIxQTNFRTZBMDZGNzgxMDE2MUFENEI4QjVCQ192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYR2lnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8yMDQ3MTE0NDUyNDIxMTIxXzQwODgyNDYxMDg4MzYwMzI0OTIubXA0FQICyAESACgAGAAbAogHdXNlX29pbAExEnByb2dyZXNzaXZlX3JlY2lwZQExFQAAJvTR_dbLnPwEFQIoAkMzLBdARPul41P3zxgSZGFzaF9iYXNlbGluZV8xX3YxEQB1_gdl5p0BAA&_nc_gid=lobXqeMz4dUDBxn5BBofPA&edm=ANo9K5cEAAAA&_nc_zt=28&_nc_tpa=Q5bMBQIi39BDd-qZZa_aJRlZL5f94ZnaCVwvZGqDHbljqd0ZNhuh50KL1cVa_v6P2BlOKp5MB1CAgyMmKg&oh=00_AQN4HOMJN4o02t0j0yG5tMO69K1xmBpaR4dcvoz4V-Q4yA&oe=6AC301B4",
+      "caption": "When opposites attract... or maybe they just had a little disagreement! 😁 European bee-eaters in their col…",
+      "fullCaption": "When opposites attract... or maybe they just had a little disagreement! 😁 European bee-eaters in their colorful glory, captured on a 40x50 cm acrylic canvas with knife work. Titled ‘Colorful Disagreement.’ 🐦🎨\n\n#EuropeanBeeEaters #BirdArt #AcrylicPainting #KnifeWorkArt #40x50Canvas #WildlifeArt #BirdsOfInstagram #NatureOnCanvas #ArtWithHumor #ColorfulBirds #OppositesAttract #BirdLovers #WildlifeInspiredArt #ArtTherapy",
+      "permalink": "https://www.instagram.com/reel/DD4U-zQT1Mu/",
+      "timestamp": "2024-12-22T12:11:12+0000",
+      "likes": 21,
+      "comments": 0
+    }
   ]
 }

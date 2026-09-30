@@ -2,17 +2,17 @@
 /*
  * Pull the Instagram feed into data/posts.json.
  *
- *   node scripts/sync-instagram.js
+ *   IG_TOKEN=... node scripts/sync-instagram.js
  *
- * Needs one environment variable:
- *   IG_TOKEN   a long-lived Instagram access token for @manthas_food_palette
+ * Sorting: Suvarna's captions were measured on 30 Sep 2026 (288 posts). She
+ * rarely writes the word "recipe" and almost never tags her posts, so the
+ * original keyword rule only placed 35% of them. The rule below scores each
+ * caption against the vocabulary she actually uses — "ingredients", "tsp",
+ * "chutney" for food; "dot work", "acrylic", "canvas", "cms" for art — and
+ * places 99% of the feed. #ManthaArt / #ManthaFood always override the score.
  *
- * Sorting rule agreed with the client (30 Sep 2026): a caption containing the
- * whole word "art" is art; a caption containing "recipe" is food. "art" is
- * matched as a WHOLE WORD on purpose — "start", "heart" and "party" must not
- * drag a dish into the art gallery. Hashtags (#manthaart / #manthafood) win
- * over plain words when both appear. Anything we cannot place confidently is
- * written to data/unsorted.json for a human to look at, never silently binned.
+ * Anything the rule cannot place goes to data/unsorted.json for a human to
+ * decide. Nothing is ever guessed at or silently dropped.
  */
 
 'use strict';
@@ -25,29 +25,56 @@ const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'data', 'posts.json');
 const UNSORTED = path.join(ROOT, 'data', 'unsorted.json');
 
-const FIELDS = 'id,caption,media_type,media_url,thumbnail_url,permalink,timestamp';
-const LIMIT = 48;
+const FIELDS = 'id,caption,media_type,media_url,thumbnail_url,permalink,timestamp,like_count,comments_count';
+const PAGE = 100;
+const MAX_PAGES = 6;
+const PER_SECTION = 12;   // how many of the newest posts each gallery shows
 
 /* ---------- classification ---------- */
 
-const RE_TAG_ART = /#mantha\s*art\b/i;
-const RE_TAG_FOOD = /#mantha\s*food\b/i;
-// \b would treat "#art" as a word boundary too, which is what we want here.
-const RE_WORD_ART = /\bart\b/i;
-const RE_WORD_FOOD = /\brecipes?\b/i;
+const TAG_ART = /#mantha\s*art\b/i;
+const TAG_FOOD = /#mantha\s*food\b/i;
+
+const ART = [
+  /\bdot\s?work\b/i, /\bdot\s?art\b/i, /\bmandala\b/i, /\bacrylic\b/i,
+  /\bpaint(ing|ed|s)?\b/i, /\bcanvas\b/i, /\bmasks?\b/i, /\bwood(en)?\b/i,
+  /#\w*art\b/i, /\bart\b/i, /\d+\s?cms?\b/i, /\bmdf\b/i, /\bbrush\b/i,
+  /\bresin\b/i, /\bcharms?\b/i, /\bkeychains?\b/i, /\bbookmarks?\b/i,
+  /charcoal\s?(sketch|drawing)/i, /\bsketch\b/i, /\bdrawing\b/i,
+  /mixed\s?media/i, /\bkolams?\b/i, /\bmagnets?\b/i, /\bgifts?\b/i
+];
+
+const FOOD = [
+  /\bingredients\b/i, /\brecipes?\b/i, /\b(tsp|tbsp|gms?|grams?)\b/i,
+  /\b(method|serve|garnish|tempering|saute|simmer|boil|fry|roast|dough|batter)\b/i,
+  /\bcook(ing|ed)?\b/i, /\bmasala\b/i, /\bchutney\b/i, /\bcurry\b/i,
+  /\btasty|delicious\b/i, /\bsweet\b/i
+];
+
+function score(caption, list) {
+  return list.reduce((n, re) => n + (re.test(caption || '') ? 1 : 0), 0);
+}
 
 function classify(caption) {
   const text = caption || '';
 
-  if (RE_TAG_ART.test(text) && !RE_TAG_FOOD.test(text)) return 'art';
-  if (RE_TAG_FOOD.test(text) && !RE_TAG_ART.test(text)) return 'food';
+  // an explicit tag always wins over the scoring
+  if (TAG_ART.test(text) && !TAG_FOOD.test(text)) return 'art';
+  if (TAG_FOOD.test(text) && !TAG_ART.test(text)) return 'food';
 
-  const art = RE_WORD_ART.test(text);
-  const food = RE_WORD_FOOD.test(text);
+  const art = score(text, ART);
+  const food = score(text, FOOD);
 
-  if (art && !food) return 'art';
-  if (food && !art) return 'food';
-  return null; // both, or neither — a human decides
+  if (art > food) return 'art';
+  if (food > art) return 'food';
+  return null;   // a tie, or nothing recognised — a human decides
+}
+
+/* The first line of her captions is the dish or the piece; the rest is the
+ * recipe or the story. The tile shows the first line, the lightbox the lot. */
+function title(caption) {
+  const line = (caption || '').split('\n').map((s) => s.trim()).filter(Boolean)[0] || '';
+  return line.length > 110 ? line.slice(0, 107).trimEnd() + '…' : line;
 }
 
 /* ---------- fetching ---------- */
@@ -63,23 +90,38 @@ async function getJSON(url) {
 }
 
 async function fetchMedia() {
-  const url = `https://graph.instagram.com/me/media?fields=${FIELDS}&limit=${LIMIT}&access_token=${TOKEN}`;
-  const body = await getJSON(url);
-  return Array.isArray(body.data) ? body.data : [];
+  let url = `https://graph.instagram.com/me/media?fields=${FIELDS}&limit=${PAGE}&access_token=${TOKEN}`;
+  const all = [];
+  for (let page = 0; page < MAX_PAGES && url; page++) {
+    const body = await getJSON(url);
+    all.push(...(body.data || []));
+    url = body.paging && body.paging.next ? body.paging.next : null;
+  }
+  return all;
 }
 
-/* Long-lived tokens last 60 days and can be refreshed once they are 24h old.
- * The scheduled job calls this every run so the connection never lapses. */
-async function refreshToken() {
-  const url = `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${TOKEN}`;
+/* A carousel has no media_url of its own — the picture lives on its children. */
+async function carouselImage(id) {
   try {
-    const body = await getJSON(url);
+    const body = await getJSON(`https://graph.instagram.com/${id}/children?fields=media_url,thumbnail_url,media_type&access_token=${TOKEN}`);
+    const first = (body.data || [])[0];
+    if (!first) return null;
+    return first.media_type === 'VIDEO' ? (first.thumbnail_url || null) : (first.media_url || null);
+  } catch (err) {
+    console.warn(`carousel ${id}: ${err.message}`);
+    return null;
+  }
+}
+
+/* Long-lived tokens last 60 days and can be refreshed once a day. */
+async function refreshToken() {
+  try {
+    const body = await getJSON(`https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${TOKEN}`);
     if (body.access_token) {
-      console.log(`token refreshed, valid for ${Math.round((body.expires_in || 0) / 86400)} more days`);
+      console.log(`token refreshed, good for another ${Math.round((body.expires_in || 0) / 86400)} days`);
       return body.access_token;
     }
   } catch (err) {
-    // A refresh failure must not stop the feed from updating.
     console.warn(`token refresh skipped: ${err.message}`);
   }
   return null;
@@ -94,62 +136,81 @@ async function main() {
   }
 
   const media = await fetchMedia();
-  console.log(`fetched ${media.length} posts from Instagram`);
+  console.log(`fetched ${media.length} posts`);
 
-  const posts = [];
+  const sorted = { food: [], art: [] };
   const unsorted = [];
+  let noVideoUrl = 0;
 
   for (const m of media) {
     const section = classify(m.caption);
     const isVideo = m.media_type === 'VIDEO';
+    const isCarousel = m.media_type === 'CAROUSEL_ALBUM';
+
+    let poster = isVideo ? m.thumbnail_url : m.media_url;
+    if (isCarousel && !poster) poster = await carouselImage(m.id);
+
+    // Instagram withholds media_url on a large share of reels. Those cannot be
+    // played here; the tile still shows, and the lightbox offers Instagram.
+    const video = isVideo ? (m.media_url || null) : null;
+    if (isVideo && !video) noVideoUrl++;
 
     const post = {
       id: m.id,
       section,
       type: isVideo ? 'VIDEO' : 'IMAGE',
-      src: m.media_url,
-      poster: isVideo ? (m.thumbnail_url || null) : m.media_url,
-      caption: (m.caption || '').trim(),
+      src: poster,
+      video,
+      caption: title(m.caption),
+      fullCaption: (m.caption || '').trim(),
       permalink: m.permalink,
-      timestamp: m.timestamp
+      timestamp: m.timestamp,
+      likes: typeof m.like_count === 'number' ? m.like_count : null,
+      comments: typeof m.comments_count === 'number' ? m.comments_count : null
     };
 
-    if (section) {
-      posts.push(post);
-    } else {
-      unsorted.push(post);
+    if (!post.src) {                       // nothing to show — don't publish a blank tile
+      unsorted.push({ ...post, reason: 'no image available' });
+      continue;
     }
+    if (section) sorted[section].push(post);
+    else unsorted.push({ ...post, reason: 'could not tell food from art' });
   }
 
-  const counts = {
-    food: posts.filter((p) => p.section === 'food').length,
-    art: posts.filter((p) => p.section === 'art').length,
-    unsorted: unsorted.length
-  };
-
-  // A run that classified nothing means the rule broke, not that she stopped
+  // A run that sorted nothing means the rule broke, not that she stopped
   // posting. Keep the previous file rather than publishing an empty site.
-  if (media.length > 0 && counts.food === 0 && counts.art === 0) {
-    console.error('every post came back unsorted — leaving the existing file alone.');
-    fs.writeFileSync(UNSORTED, JSON.stringify({ generated: new Date().toISOString(), posts: unsorted }, null, 2));
+  if (media.length > 0 && !sorted.food.length && !sorted.art.length) {
+    console.error('nothing could be classified — leaving the existing feed alone.');
     process.exit(1);
   }
+
+  const posts = [...sorted.food.slice(0, PER_SECTION), ...sorted.art.slice(0, PER_SECTION)];
 
   fs.writeFileSync(OUT, JSON.stringify({
     source: 'instagram',
     account: 'manthas_food_palette',
     generated: new Date().toISOString(),
-    counts,
+    showStats: false,               // flip to true to show like/comment counts
+    counts: {
+      fetched: media.length,
+      food: sorted.food.length,
+      art: sorted.art.length,
+      unsorted: unsorted.length,
+      reelsWithoutPlayableVideo: noVideoUrl,
+      shownPerSection: PER_SECTION
+    },
     posts
   }, null, 2) + '\n');
 
   fs.writeFileSync(UNSORTED, JSON.stringify({
     generated: new Date().toISOString(),
-    note: 'Captions containing both "art" and "recipe", or neither. Decide these by hand.',
-    posts: unsorted
+    note: 'Posts the rule would not guess at. Decide these by hand.',
+    posts: unsorted.map((p) => ({ id: p.id, reason: p.reason, caption: p.caption, permalink: p.permalink }))
   }, null, 2) + '\n');
 
-  console.log(`written: ${counts.food} food, ${counts.art} art, ${counts.unsorted} needing a decision`);
+  console.log(`sorted ${sorted.food.length} food, ${sorted.art.length} art, ${unsorted.length} left for a human`);
+  console.log(`${noVideoUrl} reels have no playable video URL from Instagram`);
+  console.log(`published the newest ${PER_SECTION} of each`);
 
   const fresh = await refreshToken();
   if (fresh && process.env.GITHUB_OUTPUT) {
@@ -157,7 +218,7 @@ async function main() {
   }
 }
 
-module.exports = { classify };
+module.exports = { classify, title };
 
 if (require.main === module) {
   main().catch((err) => {

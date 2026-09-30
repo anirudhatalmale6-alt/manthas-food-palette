@@ -59,9 +59,14 @@
       lbImg.hidden = false;
     }
 
-    lbCap.textContent  = t.getAttribute('data-cap') || '';
+    lbCap.textContent  = t.getAttribute('data-full-cap') || t.getAttribute('data-cap') || '';
     lbStat.textContent = t.getAttribute('data-stats') || '';
     lbLink.href = t.getAttribute('data-link') || 'https://www.instagram.com/manthas_food_palette/';
+    // Instagram withholds the video file on a lot of reels. Say what the link
+    // does rather than pretending the post will play here.
+    lbLink.textContent = (t.classList.contains('is-video') && !video)
+      ? 'Watch this reel on Instagram →'
+      : 'Open this post on Instagram →';
   }
 
   function open(i) {
@@ -101,20 +106,23 @@
       .replace(/"/g, '&quot;');
   }
 
+  var SHOW_STATS = false;
+
   function stats(post) {
-    if (typeof post.likes !== 'number') { return ''; }
+    if (!SHOW_STATS || typeof post.likes !== 'number') { return ''; }
     var s = post.likes.toLocaleString() + ' likes';
     if (typeof post.comments === 'number') { s += ' · ' + post.comments.toLocaleString() + ' comments'; }
     return s;
   }
 
   function tileHTML(post) {
-    var poster = post.poster || post.src;
+    var poster = post.src;
     var isVideo = post.type === 'VIDEO';
     return '<button class="tile' + (isVideo ? ' is-video' : '') + '" type="button"' +
       ' data-full="' + esc(poster) + '"' +
-      (isVideo ? ' data-video="' + esc(post.src) + '"' : '') +
+      (post.video ? ' data-video="' + esc(post.video) + '"' : '') +
       ' data-cap="' + esc(post.caption) + '"' +
+      ' data-full-cap="' + esc(post.fullCaption || post.caption) + '"' +
       ' data-stats="' + esc(stats(post)) + '"' +
       ' data-link="' + esc(post.permalink) + '">' +
       '<img src="' + esc(poster) + '" alt="' + esc(post.caption).slice(0, 120) + '" loading="lazy" width="700" height="700">' +
@@ -136,6 +144,7 @@
     .then(function (r) { return r.ok ? r.json() : null; })
     .then(function (data) {
       if (!data || !Array.isArray(data.posts) || !data.posts.length) { return; }
+      SHOW_STATS = data.showStats === true;
       render('food', data.posts);
       render('art', data.posts);
       collectTiles();
