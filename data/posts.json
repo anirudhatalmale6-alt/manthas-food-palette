@@ -1,0 +1,19 @@
+{
+  "source": "placeholder",
+  "note": "Placeholder content. Replaced automatically by scripts/sync-instagram.js once the Instagram connection is authorised.",
+  "posts": [
+    { "id": "ph-f1", "section": "food", "type": "IMAGE", "src": "assets/img/p1.jpg", "caption": "Crisp dosa, soft centre — the Sunday standard.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 1240, "comments": 38 },
+    { "id": "ph-f2", "section": "food", "type": "IMAGE", "src": "assets/img/p2.jpg", "caption": "Dum biryani, lid sealed, forty minutes of patience.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 2815, "comments": 96 },
+    { "id": "ph-f3", "section": "food", "type": "IMAGE", "src": "assets/img/p3.jpg", "caption": "Chole bhature. No notes, just breakfast.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 1902, "comments": 54 },
+    { "id": "ph-f4", "section": "food", "type": "IMAGE", "src": "assets/img/p5.jpg", "caption": "Gulab jamun, warm, soaked, gone in minutes.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 3410, "comments": 128 },
+    { "id": "ph-f5", "section": "food", "type": "IMAGE", "src": "assets/img/p6.jpg", "caption": "Paneer tikka off the grill, straight onto the board.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 1577, "comments": 43 },
+    { "id": "ph-f6", "section": "food", "type": "IMAGE", "src": "assets/img/p9.jpg", "caption": "Dark chocolate cake, salted sauce, one slice only.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 2668, "comments": 88 },
+
+    { "id": "ph-a1", "section": "art", "type": "IMAGE", "src": "assets/img/a1.jpg", "caption": "Ink mandala, three evenings of small circles.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 874, "comments": 22 },
+    { "id": "ph-a2", "section": "art", "type": "IMAGE", "src": "assets/img/a2.jpg", "caption": "Butterfly mandala — colour test on paper.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 1105, "comments": 31 },
+    { "id": "ph-a3", "section": "art", "type": "IMAGE", "src": "assets/img/a3.jpg", "caption": "Madhubani panel, natural pigments, slow work.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 1433, "comments": 47 },
+    { "id": "ph-a4", "section": "art", "type": "IMAGE", "src": "assets/img/a4.jpg", "caption": "Warli figures — a whole village on one wall.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 962, "comments": 18 },
+    { "id": "ph-a5", "section": "art", "type": "IMAGE", "src": "assets/img/a5.jpg", "caption": "Acrylic study. No plan, just colour.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 1288, "comments": 36 },
+    { "id": "ph-a6", "section": "art", "type": "IMAGE", "src": "assets/img/a6.jpg", "caption": "Watercolour botanicals for a commission.", "permalink": "https://www.instagram.com/manthas_food_palette/", "likes": 2014, "comments": 63 }
+  ]
+}

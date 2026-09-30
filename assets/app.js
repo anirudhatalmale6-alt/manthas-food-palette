@@ -1,5 +1,9 @@
-/* The Mantha Studio — mockup interactions
-   Anirudha Talmale · Sept 2026 */
+/* The Mantha Studio — site behaviour
+   Anirudha Talmale · Sept 2026
+
+   The galleries in index.html are a working fallback. If data/posts.json is
+   reachable (it is rewritten by the Instagram sync) the grids are rebuilt from
+   it, so the site keeps working even with JavaScript switched off. */
 (function () {
   'use strict';
 
@@ -11,11 +15,13 @@
 
   /* ---------- lightbox ----------
      Posts open here, on this website. A visitor with no Instagram account
-     can still see every picture and caption; the Instagram link is optional. */
+     still sees the picture, the video and the caption. */
   var lb     = document.getElementById('lightbox');
   var lbImg  = document.getElementById('lb-img');
+  var lbVid  = document.getElementById('lb-video');
   var lbCap  = document.getElementById('lb-cap');
   var lbStat = document.getElementById('lb-stats');
+  var lbLink = document.getElementById('lb-link');
   var closeB = lb.querySelector('.lb-close');
   var prevB  = lb.querySelector('.lb-prev');
   var nextB  = lb.querySelector('.lb-next');
@@ -24,18 +30,38 @@
   var index = 0;
   var lastFocus = null;
 
-  Array.prototype.forEach.call(document.querySelectorAll('.tile'), function (t) {
-    tiles.push(t);
-    t.addEventListener('click', function () { open(tiles.indexOf(t)); });
-  });
+  function collectTiles() {
+    tiles = Array.prototype.slice.call(document.querySelectorAll('.tile'));
+    tiles.forEach(function (t, i) {
+      if (t.dataset.bound) { return; }
+      t.dataset.bound = '1';
+      t.addEventListener('click', function () { open(tiles.indexOf(t)); });
+    });
+  }
 
   function show(i) {
     var t = tiles[i];
+    if (!t) { return; }
     index = i;
-    lbImg.src = t.getAttribute('data-full');
-    lbImg.alt = t.querySelector('img').alt;
-    lbCap.textContent = t.getAttribute('data-cap') || '';
+
+    var video = t.getAttribute('data-video');
+    if (video) {
+      lbVid.src = video;
+      lbVid.poster = t.getAttribute('data-full') || '';
+      lbVid.hidden = false;
+      lbImg.hidden = true;
+    } else {
+      lbVid.pause();
+      lbVid.removeAttribute('src');
+      lbVid.hidden = true;
+      lbImg.src = t.getAttribute('data-full');
+      lbImg.alt = t.querySelector('img') ? t.querySelector('img').alt : '';
+      lbImg.hidden = false;
+    }
+
+    lbCap.textContent  = t.getAttribute('data-cap') || '';
     lbStat.textContent = t.getAttribute('data-stats') || '';
+    lbLink.href = t.getAttribute('data-link') || 'https://www.instagram.com/manthas_food_palette/';
   }
 
   function open(i) {
@@ -47,6 +73,7 @@
   }
 
   function close() {
+    lbVid.pause();
     lb.hidden = true;
     document.body.classList.remove('lb-open');
     if (lastFocus) { lastFocus.focus(); }
@@ -64,6 +91,56 @@
     if (e.key === 'ArrowLeft')  { step(-1); }
     if (e.key === 'ArrowRight') { step(1); }
   });
+
+  collectTiles();
+
+  /* ---------- build the grids from the synced feed ---------- */
+  function esc(s) {
+    return String(s === null || s === undefined ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function stats(post) {
+    if (typeof post.likes !== 'number') { return ''; }
+    var s = post.likes.toLocaleString() + ' likes';
+    if (typeof post.comments === 'number') { s += ' · ' + post.comments.toLocaleString() + ' comments'; }
+    return s;
+  }
+
+  function tileHTML(post) {
+    var poster = post.poster || post.src;
+    var isVideo = post.type === 'VIDEO';
+    return '<button class="tile' + (isVideo ? ' is-video' : '') + '" type="button"' +
+      ' data-full="' + esc(poster) + '"' +
+      (isVideo ? ' data-video="' + esc(post.src) + '"' : '') +
+      ' data-cap="' + esc(post.caption) + '"' +
+      ' data-stats="' + esc(stats(post)) + '"' +
+      ' data-link="' + esc(post.permalink) + '">' +
+      '<img src="' + esc(poster) + '" alt="' + esc(post.caption).slice(0, 120) + '" loading="lazy" width="700" height="700">' +
+      (isVideo ? '<span class="tile-play" aria-hidden="true"></span>' : '') +
+      '<span class="tile-body"><span class="tile-cap">' + esc(post.caption) + '</span>' +
+      '<span class="tile-stats">' + esc(stats(post)) + '</span></span>' +
+      '</button>';
+  }
+
+  function render(section, posts) {
+    var grid = document.getElementById('grid-' + section);
+    if (!grid) { return; }
+    var mine = posts.filter(function (p) { return p.section === section; });
+    if (!mine.length) { return; }          // keep the fallback rather than empty the grid
+    grid.innerHTML = mine.map(tileHTML).join('');
+  }
+
+  fetch('data/posts.json', { cache: 'no-cache' })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (data) {
+      if (!data || !Array.isArray(data.posts) || !data.posts.length) { return; }
+      render('food', data.posts);
+      render('art', data.posts);
+      collectTiles();
+    })
+    .catch(function () { /* keep the fallback grids exactly as they are */ });
 
   /* ---------- forms ----------
      Neither form is connected to a mailbox yet, so say so rather than

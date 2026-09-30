@@ -1,0 +1,55 @@
+name: Sync Instagram feed
+
+# Pulls the latest posts into data/posts.json and commits the change.
+# Runs twice a day, and on demand from the Actions tab.
+on:
+  schedule:
+    - cron: '17 3,15 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch the feed
+        id: sync
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: node scripts/sync-instagram.js
+
+      # Long-lived Instagram tokens expire after 60 days. The script asks
+      # Instagram for a fresh one on every run; this step stores it back so the
+      # connection never lapses. Needs GH_PAT (a token with secrets: write).
+      # Without GH_PAT the feed still syncs, but the token must be replaced by
+      # hand roughly every 50 days.
+      - name: Store the refreshed token
+        if: steps.sync.outputs.new_token != ''
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::GH_PAT is not set — the refreshed token was not saved."
+            exit 0
+          fi
+          gh secret set IG_TOKEN --body "${{ steps.sync.outputs.new_token }}"
+
+      - name: Commit the new feed
+        run: |
+          git config user.name  "Instagram sync"
+          git config user.email "actions@github.com"
+          git add data/posts.json data/unsorted.json
+          if git diff --staged --quiet; then
+            echo "no change in the feed"
+          else
+            git commit -m "Sync Instagram feed"
+            git push
+          fi
