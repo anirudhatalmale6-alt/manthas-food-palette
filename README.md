@@ -1,17 +1,22 @@
-# Mantha's Food Palette — homepage design mockup
+# The Mantha Studio — website design mockup
 
-Static design mockup for a food-photography portfolio site for
-[@manthas_food_palette](https://www.instagram.com/manthas_food_palette/).
+Portfolio site for Suvarna Mantha: **food**, **art** and **astrology**.
+Instagram: [@manthas_food_palette](https://www.instagram.com/manthas_food_palette/)
 
-**Status:** design mockup only. The gallery uses freely licensed placeholder
-photographs (Wikimedia Commons, CC0 / CC BY-SA) standing in for the real
-Instagram feed. The contact form is not yet wired to a mailbox.
+## What is here
+- Food gallery and Art gallery — both fed from Instagram once connected
+- A lightbox so posts open **on this website**; visitors need no Instagram account
+- Astrology section with a birth-details request form
+- Contact section — phone, email, WhatsApp, Instagram, plus a message form
+
+**Status:** design mockup. Gallery images are freely licensed placeholders from
+Wikimedia Commons (CC0 / CC BY-SA). Neither form is connected to a mailbox yet;
+submitting one says so rather than pretending to send.
 
 ## Next steps
-1. Client switches the Instagram account to a Creator/Business profile.
-2. Connect the Instagram Graph API so the gallery fills from the live feed
-   and refreshes automatically.
-3. Wire the contact form to the client's real inbox.
-4. Point the chosen domain at the site.
+1. Switch the Instagram account to Creator/Business.
+2. Connect the Instagram Graph API; tag food vs art posts so each grid fills correctly.
+3. Wire both forms to a real inbox.
+4. Register the domain and point it here.
 
 Built by Anirudha Talmale.
