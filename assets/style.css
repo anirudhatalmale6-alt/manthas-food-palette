@@ -205,6 +205,7 @@ p{margin:0 0 1rem}
 .form{background:var(--paper);color:var(--ink);border-radius:18px;padding:clamp(1.6rem,3vw,2.2rem)}
 .form h3{font-family:Fraunces,Georgia,serif;font-size:1.35rem;margin-bottom:1.3rem}
 .form label{display:block;font-size:.82rem;font-weight:500;color:var(--ink-soft);margin-bottom:1rem}
+.opt{font-weight:400;font-size:.76rem;color:rgba(106,92,78,.7);font-style:italic}
 .form .row{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
 .form input,.form select,.form textarea{
   width:100%;margin-top:.4rem;padding:.78rem .9rem;
