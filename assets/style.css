@@ -313,6 +313,20 @@ p{margin:0 0 1rem}
   html{scroll-behavior:auto}
 }
 
+/* ---------- reviews ---------- */
+.review-grid{
+  list-style:none;margin:0;padding:0;display:grid;gap:1.4rem;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));
+}
+.review{
+  background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:var(--r);padding:1.5rem 1.5rem 1.35rem;
+  display:flex;flex-direction:column;gap:.55rem;
+}
+.review blockquote{margin:0;font-size:1rem;line-height:1.6;color:var(--ink)}
+.review cite{font-style:normal;font-weight:600;font-size:.92rem;color:var(--accent);margin-top:auto}
+.review-for{font-size:.82rem;color:var(--ink-soft)}
+
 /* ---------- thank-you page ---------- */
 .thanks{padding:clamp(4rem,10vw,8rem) 0;min-height:60vh;display:grid;align-items:center}
 .thanks-in{max-width:62ch}
