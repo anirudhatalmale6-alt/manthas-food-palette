@@ -313,6 +313,58 @@ p{margin:0 0 1rem}
   html{scroll-behavior:auto}
 }
 
+/* ---------- reviews ---------- */
+.review-grid{
+  list-style:none;margin:0;padding:0;display:grid;gap:1.4rem;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));
+}
+.review{
+  background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:var(--r);padding:1.5rem 1.5rem 1.35rem;
+  display:flex;flex-direction:column;gap:.55rem;
+}
+.review blockquote{margin:0;font-size:1rem;line-height:1.6;color:var(--ink)}
+.review cite{font-style:normal;font-weight:600;font-size:.92rem;color:var(--accent);margin-top:auto}
+.review-for{font-size:.82rem;color:var(--ink-soft)}
+
+/* stars shown on a review card. The filled ones are written in the HTML,
+   so adding a review is still just typing - no script decides anything. */
+.review-stars{font-size:1rem;letter-spacing:.1em;color:var(--accent);line-height:1}
+.review-stars .off{color:rgba(31,26,21,.22)}
+
+/* ---------- the review form (review.html) ---------- */
+.review-page{max-width:46rem}
+.review-page .lede{margin-bottom:2.2rem}
+.review-page .form{max-width:none}
+
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.stars{border:0;margin:0;padding:0}
+.stars legend{
+  font-size:.86rem;font-weight:500;color:var(--ink-soft);
+  padding:0;margin-bottom:.4rem;
+}
+/* The inputs sit 5-4-3-2-1 in the HTML and are reversed on screen, so that
+   "checked" can reach the lower stars with a sibling selector. */
+.star-row{display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:.15rem}
+.star-row input{position:absolute;opacity:0;width:1px;height:1px}
+.star-row label{
+  cursor:pointer;font-size:2rem;line-height:1;color:rgba(31,26,21,.22);
+  transition:color .12s ease;padding:0 .05rem;
+}
+.star-row label::before{content:"\2605"}
+.star-row label:hover,
+.star-row label:hover ~ label,
+.star-row input:checked ~ label{color:var(--accent)}
+.star-row input:focus-visible + label{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+.check{
+  display:flex;align-items:flex-start;gap:.7rem;
+  font-size:.92rem;line-height:1.5;color:var(--ink-soft);
+  font-weight:400;
+}
+.check input{flex:none;width:18px;height:18px;margin-top:.15rem;accent-color:var(--accent)}
+
 /* ---------- thank-you page ---------- */
 .thanks{padding:clamp(4rem,10vw,8rem) 0;min-height:60vh;display:grid;align-items:center}
 .thanks-in{max-width:62ch}
