@@ -195,9 +195,14 @@
 
   <!-- ---------- REVIEWS ----------
        To add a review, copy one <li> block below, paste it after the others,
-       and change the three parts: the quote, the name, and what it was for.
+       and change four things: the stars, the quote, the name, and what it was for.
        Keep the quotation marks &ldquo; and &rdquo; as they are.
-       Delete the "for" line if it doesn't apply. Nothing else needs touching. -->
+       Delete the "for" line if it doesn't apply.
+
+       The stars: each &#9733; is one filled star. For fewer than five, wrap the
+       empty ones in <span class="off">, as the middle card below shows, and
+       change the aria-label to match so it reads correctly aloud. -->
+
   <section class="section reviews" id="reviews">
     <div class="wrap">
       <div class="sec-head">
@@ -211,18 +216,21 @@
       <ul class="review-grid">
 
         <li class="review">
+          <p class="review-stars" aria-label="5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
           <blockquote>&ldquo;A real sentence from a real customer goes here. Two or three lines reads best.&rdquo;</blockquote>
           <cite>First name</cite>
           <span class="review-for">What it was for</span>
         </li>
 
         <li class="review">
-          <blockquote>&ldquo;A real sentence from a real customer goes here. Two or three lines reads best.&rdquo;</blockquote>
+          <p class="review-stars" aria-label="4 out of 5">&#9733;&#9733;&#9733;&#9733;<span class="off">&#9733;</span></p>
+          <blockquote>&ldquo;This one shows four stars instead of five, so you can see how that looks.&rdquo;</blockquote>
           <cite>First name</cite>
           <span class="review-for">What it was for</span>
         </li>
 
         <li class="review">
+          <p class="review-stars" aria-label="5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
           <blockquote>&ldquo;A real sentence from a real customer goes here. Two or three lines reads best.&rdquo;</blockquote>
           <cite>First name</cite>
           <span class="review-for">What it was for</span>

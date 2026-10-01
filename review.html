@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leave a review — The Mantha Studio</title>
+<!-- Unlisted on purpose: not in the menu, not in the sitemap, not indexed.
+     Suvarna sends this link to a customer once the work is finished. -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/img/feather-mark.png" type="image/png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">
+        <img class="feather" src="assets/img/feather-mark.png" alt="" width="28" height="28">
+        <span class="brand-initials">MS</span>
+      </span>
+      <span class="brand-text">The Mantha <em>Studio</em></span>
+    </a>
+  </div>
+</header>
+
+<main class="section">
+  <div class="wrap review-page">
+    <p class="eyebrow">Thank you</p>
+    <h1>Leave a review.</h1>
+    <p class="lede">If you were happy with your reading, your commission or something you cooked,
+    a sentence or two would mean a great deal &mdash; and it helps the next person decide.</p>
+
+    <form class="form" id="review-form"
+          action="https://formsubmit.co/suvarnamantha@icloud.com" method="POST">
+      <!-- the relay's own settings -->
+      <input type="hidden" name="_subject" value="New review — themanthastudio.com">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://themanthastudio.com/thanks-review.html">
+      <!-- bots fill this in, people never see it -->
+      <p class="trap" aria-hidden="true"><label>Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
+
+      <label>Your first name
+        <input type="text" name="first_name" autocomplete="given-name" placeholder="How you would like to be shown" required>
+      </label>
+
+      <label>What was it for?
+        <select name="what_for" required>
+          <option value="">Choose one&hellip;</option>
+          <option>An astrology reading</option>
+          <option>A commissioned artwork</option>
+          <option>A piece of art I bought</option>
+          <option>Something I cooked from a recipe</option>
+          <option>Something else</option>
+        </select>
+      </label>
+
+      <fieldset class="stars">
+        <legend>Your rating</legend>
+        <div class="star-row">
+          <input type="radio" id="star5" name="rating" value="5 out of 5" required>
+          <label for="star5" title="5 out of 5"><span class="vh">5 out of 5</span></label>
+          <input type="radio" id="star4" name="rating" value="4 out of 5">
+          <label for="star4" title="4 out of 5"><span class="vh">4 out of 5</span></label>
+          <input type="radio" id="star3" name="rating" value="3 out of 5">
+          <label for="star3" title="3 out of 5"><span class="vh">3 out of 5</span></label>
+          <input type="radio" id="star2" name="rating" value="2 out of 5">
+          <label for="star2" title="2 out of 5"><span class="vh">2 out of 5</span></label>
+          <input type="radio" id="star1" name="rating" value="1 out of 5">
+          <label for="star1" title="1 out of 5"><span class="vh">1 out of 5</span></label>
+        </div>
+      </fieldset>
+
+      <label>Your review
+        <textarea name="review" rows="5" placeholder="What you asked for, and how you found it&hellip;" required></textarea>
+      </label>
+
+      <label>Email <span class="opt">optional &mdash; only so Suvarna can thank you</span>
+        <input type="email" name="email" autocomplete="email" placeholder="you@example.com">
+      </label>
+
+      <label class="check">
+        <input type="checkbox" name="permission" value="Yes — may be published with my first name" required>
+        <span>I am happy for this to appear on themanthastudio.com, shown with my first name only.</span>
+      </label>
+
+      <button class="btn btn-primary btn-block" type="submit">Send my review</button>
+
+      <p class="form-note">Nothing is published automatically. Suvarna reads every review first and
+      chooses what goes on the site. Your email address is never shown. The form is delivered by
+      FormSubmit, which passes the message to her inbox and does not keep it.</p>
+    </form>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span class="brand-text foot-brand">The Mantha <em>Studio</em></span>
+    <p class="foot-fine">&copy; 2026 The Mantha Studio &middot; Suvarna Mantha.</p>
+  </div>
+</footer>
+
+</body>
+</html>
