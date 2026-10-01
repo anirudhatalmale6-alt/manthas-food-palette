@@ -84,7 +84,7 @@ p{margin:0 0 1rem}
   font:700 1rem/1 Fraunces,Georgia,serif;letter-spacing:.02em;
   display:inline-flex;align-items:center;gap:.34rem;padding:0 .6rem 0 .5rem;
 }
-.brand-mark .feather{flex:none;display:block}
+.brand-mark .feather{flex:none;display:block;width:28px;height:28px;border-radius:50%;object-fit:cover}
 .brand-initials{display:block;padding-bottom:1px}
 .brand-text{font-family:Fraunces,Georgia,serif;font-size:1.12rem;font-weight:600;letter-spacing:-.01em}
 .nav .brand-text{color:#fff}
@@ -115,7 +115,7 @@ p{margin:0 0 1rem}
 
 .hero-art{margin:0;position:relative}
 .hero-art::before{content:"";position:absolute;inset:18px -18px -18px 18px;background:var(--bg-warm);border-radius:var(--r)}
-.hero-art img{position:relative;border-radius:var(--r);box-shadow:var(--shadow);aspect-ratio:4/3.6;object-fit:cover;width:100%}
+.hero-art img{position:relative;border-radius:var(--r);box-shadow:var(--shadow);aspect-ratio:5/6;object-fit:cover;object-position:center 42%;width:100%}
 .hero-art figcaption{
   position:absolute;bottom:14px;left:14px;z-index:2;
   background:rgba(255,253,250,.94);color:var(--ink);

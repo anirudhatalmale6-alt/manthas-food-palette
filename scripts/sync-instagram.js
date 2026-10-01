@@ -228,7 +228,12 @@ async function main() {
   console.log(`${noVideoUrl} reels have no playable video URL from Instagram`);
   console.log(`published the newest ${PER_SECTION} of each`);
 
-  await updateHero([...sorted.art, ...sorted.food], manualChoices().heroPost);
+  const choices = manualChoices();
+  if (choices.heroFixed) {
+    console.log('hero is fixed by hand in data/overrides.json — leaving the picture alone');
+  } else {
+    await updateHero([...sorted.art, ...sorted.food], choices.heroPost);
+  }
 
   const fresh = await refreshToken();
   if (fresh && process.env.GITHUB_OUTPUT) {

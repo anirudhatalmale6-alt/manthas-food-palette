@@ -5,5 +5,7 @@
     "17942856493589469": "art"
   },
   "heroPost": null,
-  "heroPostNote": "Instagram post id to pin as the homepage picture. null = use her most recent work. The acrylic Hanuman the client linked on 30 Sep is 17908223054189811."
+  "heroPostNote": "Instagram post id to pin as the homepage picture. null = use her most recent work. The acrylic Hanuman the client linked on 30 Sep is 17908223054189811.",
+  "heroFixed": true,
+  "heroFixedNote": "true = assets/img/hero.jpg was chosen by hand and the sync must leave it alone. Set false to let the site show her newest work again."
 }
