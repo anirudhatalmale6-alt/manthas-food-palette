@@ -151,24 +151,19 @@
     })
     .catch(function () { /* keep the fallback grids exactly as they are */ });
 
-  /* ---------- forms ----------
-     Neither form is connected to a mailbox yet, so say so rather than
-     pretend the message was sent. */
-  function wire(formId, noteId, msg) {
-    var form = document.getElementById(formId);
-    var note = document.getElementById(noteId);
-    if (!form) { return; }
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (!form.checkValidity()) {
-        note.className = 'form-note';
-        note.textContent = 'Please fill in the required fields.';
-        return;
+  /* ---------- the astrology form ----------
+     It posts for real now. The form has no "novalidate", so the browser does
+     the checking and refuses to submit an incomplete one before this handler
+     is ever reached — which is why there is no custom error message here.
+     All this does is make the wait visible once a valid form is on its way. */
+  var astro = document.getElementById('astro-form');
+  if (astro) {
+    astro.addEventListener('submit', function () {
+      var button = astro.querySelector('button[type="submit"]');
+      if (button) {
+        button.disabled = true;
+        button.textContent = 'Sending\u2026';
       }
-      note.className = 'form-note ok';
-      note.textContent = msg;
     });
   }
-  wire('contact-form', 'form-note', 'This is a design mockup — the form is not connected to a mailbox yet.');
-  wire('astro-form', 'astro-note', 'This is a design mockup — the form is not connected to a mailbox yet.');
 })();

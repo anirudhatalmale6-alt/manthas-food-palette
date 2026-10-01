@@ -143,8 +143,16 @@
         </ul>
       </div>
 
-      <form class="form form-astro" id="astro-form" novalidate>
+      <form class="form form-astro" id="astro-form"
+            action="https://formsubmit.co/suvarnamantha@icloud.com" method="POST">
         <h3>Your details</h3>
+        <!-- the relay's own settings -->
+        <input type="hidden" name="_subject" value="Astrology reading request — themanthastudio.com">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://themanthastudio.com/thanks.html">
+        <!-- bots fill this in, people never see it -->
+        <p class="trap" aria-hidden="true"><label>Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
         <label>Full name
           <input type="text" name="name" autocomplete="name" placeholder="Your full name" required>
         </label>
@@ -171,7 +179,9 @@
           <textarea name="question" rows="4" placeholder="A question, a decision, or just where you would like to start&hellip;"></textarea>
         </label>
         <button class="btn btn-primary btn-block" type="submit">Send my details</button>
-        <p class="form-note" id="astro-note">Your details go only to Suvarna. Nothing is published or shared.</p>
+        <p class="form-note" id="astro-note">Your details go straight to Suvarna and nowhere else.
+        They are never published. The form is delivered by FormSubmit, which passes the message to her
+        inbox and does not keep it.</p>
       </form>
     </div>
   </section>
@@ -212,31 +222,6 @@
           </li>
         </ul>
       </div>
-
-      <form class="form" id="contact-form" novalidate>
-        <h3>Send a message</h3>
-        <div class="row">
-          <label>Your name
-            <input type="text" name="name" autocomplete="name" placeholder="Priya Sharma" required>
-          </label>
-          <label>Email
-            <input type="email" name="email" autocomplete="email" placeholder="priya@example.com" required>
-          </label>
-        </div>
-        <label>What is this about?
-          <select name="topic">
-            <option>Food &mdash; a shoot or recipe work</option>
-            <option>Art &mdash; a commission or print</option>
-            <option>Astrology &mdash; a reading</option>
-            <option>Something else</option>
-          </select>
-        </label>
-        <label>Message
-          <textarea name="message" rows="5" placeholder="Tell me a little about what you have in mind&hellip;" required></textarea>
-        </label>
-        <button class="btn btn-dark btn-block" type="submit">Send message</button>
-        <p class="form-note" id="form-note">Goes straight to my inbox. No newsletter, no sharing your details.</p>
-      </form>
     </div>
   </section>
 
@@ -254,8 +239,9 @@
     </nav>
     <p class="foot-fine">&copy; 2026 The Mantha Studio &middot; Suvarna Mantha. All work shown is her own.</p>
   </div>
-  <p class="foot-disclosure wrap">Design mockup &mdash; the gallery photographs are freely licensed
-  placeholders from Wikimedia Commons (CC0 / CC BY-SA), standing in until the live Instagram feed is connected.</p>
+  <p class="foot-disclosure wrap">Food and art shown here are pulled automatically from
+  <a href="https://www.instagram.com/manthas_food_palette/" target="_blank" rel="noopener">@manthas_food_palette</a>
+  and update twice a day.</p>
 </footer>
 
 <!-- ---------- LIGHTBOX ---------- -->
