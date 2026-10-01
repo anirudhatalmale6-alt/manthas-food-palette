@@ -80,9 +80,12 @@ p{margin:0 0 1rem}
 .nav-in{display:flex;align-items:center;justify-content:space-between;gap:20px;height:74px}
 .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
 .brand-mark{
-  width:36px;height:36px;flex:none;border-radius:11px;background:#FFF3EC;color:var(--accent);
-  font:700 .9rem/1 Fraunces,Georgia,serif;letter-spacing:.02em;display:grid;place-items:center;
+  height:42px;flex:none;border-radius:12px;background:#FFF3EC;color:var(--accent);
+  font:700 1rem/1 Fraunces,Georgia,serif;letter-spacing:.02em;
+  display:inline-flex;align-items:center;gap:.34rem;padding:0 .6rem 0 .5rem;
 }
+.brand-mark .feather{flex:none;display:block}
+.brand-initials{display:block;padding-bottom:1px}
 .brand-text{font-family:Fraunces,Georgia,serif;font-size:1.12rem;font-weight:600;letter-spacing:-.01em}
 .nav .brand-text{color:#fff}
 .nav .brand-text em{color:#FFD9C6}
@@ -126,6 +129,13 @@ p{margin:0 0 1rem}
 .section-alt{background:var(--bg-warm)}
 .sec-head{display:flex;flex-wrap:wrap;gap:1.4rem 3rem;align-items:flex-end;justify-content:space-between;margin-bottom:2.6rem}
 .sec-note{color:var(--ink-soft);font-size:.96rem;max-width:36ch;margin:0}
+.sec-cta{
+  margin:-1rem 0 2rem;padding:1rem 1.2rem;border-radius:12px;
+  background:rgba(180,71,31,.07);border:1px solid rgba(180,71,31,.16);
+  color:var(--ink);font-size:.97rem;max-width:62ch;
+}
+.sec-cta a{color:var(--accent);font-weight:500;text-decoration:none;border-bottom:1px solid rgba(180,71,31,.4)}
+.sec-cta a:hover{border-bottom-color:var(--accent)}
 
 /* ---------- galleries ---------- */
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
