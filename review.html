@@ -45,7 +45,7 @@
       <p class="trap" aria-hidden="true"><label>Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
 
       <label>Your first name
-        <input type="text" name="first_name" autocomplete="given-name" placeholder="How you would like to be shown" required>
+        <input type="text" name="first_name" autocomplete="given-name" placeholder="How you would like to be shown" maxlength="40" required>
       </label>
 
       <label>What was it for?
@@ -76,11 +76,11 @@
       </fieldset>
 
       <label>Your review
-        <textarea name="review" rows="5" placeholder="What you asked for, and how you found it&hellip;" required></textarea>
+        <textarea name="review" rows="5" maxlength="1200" placeholder="What you asked for, and how you found it&hellip;" required></textarea>
       </label>
 
       <label>Email <span class="opt">optional &mdash; only so Suvarna can thank you</span>
-        <input type="email" name="email" autocomplete="email" placeholder="you@example.com">
+        <input type="email" name="email" autocomplete="email" placeholder="you@example.com" maxlength="120">
       </label>
 
       <label class="check">
@@ -91,8 +91,9 @@
       <button class="btn btn-primary btn-block" type="submit">Send my review</button>
 
       <p class="form-note">Nothing is published automatically. Suvarna reads every review first and
-      chooses what goes on the site. Your email address is never shown. The form is delivered by
-      FormSubmit, which passes the message to her inbox and does not keep it.</p>
+      chooses what goes on the site. Your email address is never shown. The form is handled by
+      FormSubmit, a third-party service, so your message passes through their servers on the way to
+      her inbox and is held there for a time.</p>
     </form>
   </div>
 </main>
