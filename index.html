@@ -158,37 +158,40 @@
         <!-- bots fill this in, people never see it -->
         <p class="trap" aria-hidden="true"><label>Leave this empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
         <label>Full name
-          <input type="text" name="name" autocomplete="name" placeholder="Your full name" required>
+          <input type="text" name="name" autocomplete="name" placeholder="Your full name" maxlength="80" required>
         </label>
         <div class="row">
           <label>Date of birth
             <input type="date" name="dob" required>
           </label>
           <label>Time of birth <span class="opt">as exact as you know</span>
-            <input type="text" name="tob" placeholder="e.g. 7:45 am" autocomplete="off">
+            <input type="text" name="tob" placeholder="e.g. 7:45 am" autocomplete="off" maxlength="40">
           </label>
         </div>
         <label>Place of birth
-          <input type="text" name="pob" placeholder="City and country" required>
+          <input type="text" name="pob" placeholder="City and country" maxlength="100" required>
         </label>
         <label>Birth star &mdash; nakshatra <span class="opt">optional</span>
-          <input type="text" name="nakshatra" placeholder="If you know it">
+          <input type="text" name="nakshatra" placeholder="If you know it" maxlength="40">
         </label>
         <div class="row">
           <label>Email
-            <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+            <input type="email" name="email" autocomplete="email" placeholder="you@example.com" maxlength="120" required>
           </label>
           <label>Phone or WhatsApp
-            <input type="tel" name="phone" autocomplete="tel" placeholder="+62 …">
+            <input type="tel" name="phone" autocomplete="tel" placeholder="+62 …" maxlength="30">
           </label>
         </div>
         <label>What would you like to know?
-          <textarea name="question" rows="4" placeholder="A question, a decision, or just where you would like to start&hellip;"></textarea>
+          <textarea name="question" rows="4" maxlength="2000" placeholder="A question, a decision, or just where you would like to start&hellip;"></textarea>
         </label>
         <button class="btn btn-primary btn-block" type="submit">Send my details</button>
-        <p class="form-note" id="astro-note">Your details go straight to Suvarna and nowhere else.
-        They are never published. The form is delivered by FormSubmit, which passes the message to her
-        inbox and does not keep it.</p>
+        <p class="form-note" id="astro-note">Your details go to Suvarna and are never published on
+        this site. The form is handled by FormSubmit, a third-party service, so your message passes
+        through their servers on the way to her inbox and is held there for a time. If you would
+        rather not use a form, write to her directly at
+        <a href="mailto:suvarnamantha@icloud.com">suvarnamantha@icloud.com</a> or on
+        <a href="https://wa.me/6281291612480">WhatsApp</a>.</p>
       </form>
     </div>
   </section>
