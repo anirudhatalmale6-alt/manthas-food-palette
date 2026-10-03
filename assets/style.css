@@ -18,7 +18,8 @@
 }
 
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth}
+/* the nav is sticky, so anchors have to stop clear of it */
+html{scroll-behavior:smooth;scroll-padding-top:88px}
 body{
   margin:0;
   background:var(--bg);
@@ -89,7 +90,8 @@ p{margin:0 0 1rem}
 .brand-text{font-family:Fraunces,Georgia,serif;font-size:1.12rem;font-weight:600;letter-spacing:-.01em}
 .nav .brand-text{color:#fff}
 .nav .brand-text em{color:#FFD9C6}
-.nav-links{display:flex;align-items:center;gap:1.7rem}
+.nav-links{display:flex;align-items:center;gap:1.7rem;margin-left:auto}
+.nav-follow{margin-left:1.7rem;flex:none}
 .nav-links>a:not(.btn){
   text-decoration:none;font-size:.95rem;color:rgba(255,243,236,.88);padding:.2rem 0;
   border-bottom:1px solid transparent;transition:color .15s ease,border-color .15s ease;
@@ -282,13 +284,39 @@ p{margin:0 0 1rem}
   .hero-art{order:-1}
   .hero-art::before{inset:14px -14px -14px 14px}
   .lede,.astro-copy p,.contact-copy p,.sec-note{max-width:60ch}
-  .nav-links>a:not(.btn){display:none}
+
+  /* The four section links used to be hidden here, which left no way to move
+     between sections on a phone but scrolling. They now get their own row
+     under the brand - always visible, and no menu to go hunting for. */
+  .nav-in{flex-wrap:wrap;height:auto;padding-top:.6rem;padding-bottom:0}
+  .brand{order:1}
+  .nav-follow{order:2;margin-left:auto}
+  .nav-links{
+    order:3;width:100%;margin-left:0;margin-top:.6rem;
+    gap:0;justify-content:space-between;
+    border-top:1px solid rgba(255,243,236,.22);
+    overflow-x:auto;scrollbar-width:none;
+  }
+  .nav-links::-webkit-scrollbar{display:none}
+  .nav-links>a:not(.btn){
+    white-space:nowrap;padding:.62rem .35rem;border-bottom:0;
+    flex:1 0 auto;text-align:center;
+  }
+  .nav-links>a:not(.btn):hover{border-bottom:0}
+  html{scroll-padding-top:140px}
 }
 @media (max-width:640px){
   body{font-size:16px}
   .wrap{padding:0 20px}
-  .nav-in{height:64px}
-  .brand-text{font-size:1rem}
+  /* keep the sticky nav short: the brand on one line, everything tighter */
+  .brand-text{font-size:1rem;white-space:nowrap}
+  .brand-mark{height:36px}
+  .brand-mark .feather{width:24px;height:24px}
+  .nav-in{padding-top:.45rem}
+  .nav-links{margin-top:.4rem}
+  .nav-links>a:not(.btn){font-size:.88rem;padding:.5rem .3rem}
+  .nav .btn-sm{padding:.45rem .85rem;font-size:.82rem}
+  html{scroll-padding-top:112px}
   .grid{grid-template-columns:repeat(2,1fr);gap:10px}
   .form .row{grid-template-columns:1fr}
   .contact-list{grid-template-columns:1fr;gap:1.15rem}
@@ -307,6 +335,15 @@ p{margin:0 0 1rem}
   .lb-prev{left:8px}
   .lb-next{right:8px}
   .lb-close{top:10px;right:12px}
+}
+/* On a narrow phone the brand and a worded button together fill the row and
+   push one of them onto a line of its own. The icon alone is unmistakable. */
+@media (max-width:480px){
+  .nav-follow .follow-text{display:none}
+  .nav-follow{padding:.5rem;border-radius:999px}
+  .nav-follow svg{width:17px;height:17px}
+  .nav-in{gap:10px}
+  .brand-text{font-size:.95rem}
 }
 @media (prefers-reduced-motion:reduce){
   *{transition:none!important;animation:none!important}
