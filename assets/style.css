@@ -40,6 +40,10 @@ h2{font-size:clamp(2rem,4vw,3rem)}
 h3{font-size:1.18rem;line-height:1.25}
 em{font-style:italic}
 h1 em,h2 em,.brand-text em{color:var(--accent);font-style:italic}
+/* Italic Fraunces leans right and its f curves back left, so an italic word
+   followed by one starting in f reads as if the two have collided. A touch
+   more room after the italic fixes it. */
+h1 em,h2 em{margin-right:.07em}
 p{margin:0 0 1rem}
 
 .wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 28px}
