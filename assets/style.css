@@ -121,7 +121,9 @@ p{margin:0 0 1rem}
 
 .hero-art{margin:0;position:relative}
 .hero-art::before{content:"";position:absolute;inset:18px -18px -18px 18px;background:var(--bg-warm);border-radius:var(--r)}
-.hero-art img{position:relative;border-radius:var(--r);box-shadow:var(--shadow);aspect-ratio:5/6;object-fit:cover;object-position:center 42%;width:100%}
+/* The frame takes the painting's own shape, so nothing is cropped - not the
+   edges, and not her signature. Square, portrait or landscape all show whole. */
+.hero-art img{position:relative;border-radius:var(--r);box-shadow:var(--shadow);width:100%;height:auto}
 .hero-art figcaption{
   position:absolute;bottom:14px;left:14px;z-index:2;
   background:rgba(255,253,250,.94);color:var(--ink);
