@@ -35,12 +35,15 @@ jobs:
         if: steps.sync.outputs.new_token != ''
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
+          # passed through the environment, never written into the script
+          # text below - GitHub prints step scripts in the (public) log
+          NEW_TOKEN: ${{ steps.sync.outputs.new_token }}
         run: |
           if [ -z "$GH_TOKEN" ]; then
             echo "::warning::GH_PAT is not set — the refreshed token was not saved."
             exit 0
           fi
-          gh secret set IG_TOKEN --body "${{ steps.sync.outputs.new_token }}"
+          gh secret set IG_TOKEN --body "$NEW_TOKEN"
 
       - name: Commit the new feed
         run: |

@@ -237,6 +237,9 @@ async function main() {
 
   const fresh = await refreshToken();
   if (fresh && process.env.GITHUB_OUTPUT) {
+    // Mask it BEFORE it goes anywhere. This repository is public, and so are
+    // its Actions logs: an unmasked token here is readable by anyone.
+    console.log(`::add-mask::${fresh}`);
     fs.appendFileSync(process.env.GITHUB_OUTPUT, `new_token=${fresh}\n`);
   }
 }
