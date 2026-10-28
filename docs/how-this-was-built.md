@@ -167,9 +167,16 @@ this volume.
 | What | Who | How often |
 |---|---|---|
 | Instagram sync | automatic | twice a day |
-| Instagram token renewal | automatic | every run |
+| Instagram token renewal | automatic | about once a week |
 | HTTPS certificate | automatic | forever |
 | Domain renewal | automatic, from your card | yearly, ~A$21.50 |
+
+> **This caught us out.** Until 21 October the update wrote her token into its
+> activity log, which is public, and nothing kept the refreshed tokens — so the
+> connection would have died 60 days after it was set up. Both are fixed: the
+> token can no longer reach the log, and about once a week a fresh one is
+> stored, encrypted, in `data/token.json`. Treat any token from before
+> 21 October as exposed.
 
 Changing text, choosing the hero picture, or moving a post between Food and Art
 is all explained in

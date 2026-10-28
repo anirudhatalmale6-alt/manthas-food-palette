@@ -99,15 +99,22 @@ permanently, tell me and I'll change it in the script.
 ## The two things that can actually go wrong
 
 **1. The Instagram connection expires.**
-The access token lasts 60 days. The robot renews it on every run, so in normal
-use this never bites. But if the sync stops running for two months — or if
-Suvarna changes her Instagram password, or switches the account back to
+The access token lasts 60 days. About once a week the robot swaps in a fresh
+one and keeps it, encrypted, in `data/token.json`, so in normal use this never
+bites. That needs two secrets: `IG_TOKEN` (the token you generate) and
+`TOKEN_KEY` (the key that locks the stored copy). **Never change or delete
+`TOKEN_KEY`** — without it the robot falls back to `IG_TOKEN`, which may be
+weeks old by then.
+
+But if the sync stops running for two months — or if Suvarna changes her
+Instagram password, removes the app, or switches the account back to
 Personal — the connection dies and the galleries freeze at their last good
 state. They won't go blank; the site keeps showing whatever it last fetched.
 
 Fixing it means generating a new token at developers.facebook.com and putting
-it in **Settings → Secrets and variables → Actions → `IG_TOKEN`**. Message me
-and I'll walk you through it, it's the same ten minutes as the first time.
+it in **Settings → Secrets and variables → Actions → `IG_TOKEN`**. A newly
+entered `IG_TOKEN` always takes over from the stored copy. Message me and
+I'll walk you through it, it's the same ten minutes as the first time.
 
 **2. A sync fails.**
 The Actions tab shows a red cross. The site doesn't change — the script is
