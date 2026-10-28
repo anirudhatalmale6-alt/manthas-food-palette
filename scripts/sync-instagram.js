@@ -19,13 +19,23 @@
 
 const fs = require('fs');
 const path = require('path');
+const store = require('./token-store');
 
-const TOKEN = process.env.IG_TOKEN;
+const ROOT_TOKEN = process.env.IG_TOKEN;   // set by hand; always wins when replaced
+let TOKEN = ROOT_TOKEN;                    // the one actually used this run
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'data', 'posts.json');
 const UNSORTED = path.join(ROOT, 'data', 'unsorted.json');
 const OVERRIDES = path.join(ROOT, 'data', 'overrides.json');
 const HERO = path.join(ROOT, 'assets', 'img', 'hero.jpg');
+const TOKEN_FILE = path.join(ROOT, 'data', 'token.json');
+
+/* The repository is public and so are its Actions logs. Any token this script
+ * holds that GitHub doesn't already know is secret must be masked before it
+ * can appear anywhere. Outside Actions this would just print it, so don't. */
+function mask(value) {
+  if (value && process.env.GITHUB_ACTIONS === 'true') console.log(`::add-mask::${value}`);
+}
 
 const FIELDS = 'id,caption,media_type,media_url,thumbnail_url,permalink,timestamp,like_count,comments_count';
 const PAGE = 100;
@@ -145,12 +155,27 @@ async function refreshToken() {
 /* ---------- main ---------- */
 
 async function main() {
-  if (!TOKEN) {
+  if (!ROOT_TOKEN) {
     console.error('IG_TOKEN is not set — refusing to overwrite data/posts.json.');
     process.exit(1);
   }
 
-  const media = await fetchMedia();
+  const pick = store.choose({ rootToken: ROOT_TOKEN, keyB64: process.env.TOKEN_KEY, file: TOKEN_FILE });
+  TOKEN = pick.token;
+  mask(TOKEN);
+  console.log(`token: ${pick.reason}`);
+
+  let media;
+  try {
+    media = await fetchMedia();
+  } catch (err) {
+    if (TOKEN === ROOT_TOKEN) throw err;
+    // the stored token was refused; IG_TOKEN may still be good
+    console.warn(`stored token refused (${err.message}) — retrying with IG_TOKEN`);
+    TOKEN = ROOT_TOKEN;
+    pick.due = true;
+    media = await fetchMedia();
+  }
   console.log(`fetched ${media.length} posts`);
 
   const byHand = overrides();
@@ -235,12 +260,17 @@ async function main() {
     await updateHero([...sorted.art, ...sorted.food], choices.heroPost);
   }
 
-  const fresh = await refreshToken();
-  if (fresh && process.env.GITHUB_OUTPUT) {
-    // Mask it BEFORE it goes anywhere. This repository is public, and so are
-    // its Actions logs: an unmasked token here is readable by anyone.
-    console.log(`::add-mask::${fresh}`);
-    fs.appendFileSync(process.env.GITHUB_OUTPUT, `new_token=${fresh}\n`);
+  // Keep the connection alive: about once a week, swap in a fresh token and
+  // store it encrypted. See scripts/token-store.js for why it isn't a secret.
+  if (pick.key && pick.due) {
+    const fresh = await refreshToken();
+    if (fresh) {
+      mask(fresh);
+      store.save({ key: pick.key, seed: pick.seed, token: fresh, file: TOKEN_FILE });
+      console.log('fresh token stored, encrypted, in data/token.json');
+    } else {
+      console.warn('token not refreshed this run — will try again next run');
+    }
   }
 }
 

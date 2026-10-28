@@ -24,32 +24,16 @@ jobs:
         id: sync
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          # decrypts and encrypts data/token.json - see scripts/token-store.js
+          TOKEN_KEY: ${{ secrets.TOKEN_KEY }}
         run: node scripts/sync-instagram.js
-
-      # Long-lived Instagram tokens expire after 60 days. The script asks
-      # Instagram for a fresh one on every run; this step stores it back so the
-      # connection never lapses. Needs GH_PAT (a token with secrets: write).
-      # Without GH_PAT the feed still syncs, but the token must be replaced by
-      # hand roughly every 50 days.
-      - name: Store the refreshed token
-        if: steps.sync.outputs.new_token != ''
-        env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
-          # passed through the environment, never written into the script
-          # text below - GitHub prints step scripts in the (public) log
-          NEW_TOKEN: ${{ steps.sync.outputs.new_token }}
-        run: |
-          if [ -z "$GH_TOKEN" ]; then
-            echo "::warning::GH_PAT is not set — the refreshed token was not saved."
-            exit 0
-          fi
-          gh secret set IG_TOKEN --body "$NEW_TOKEN"
 
       - name: Commit the new feed
         run: |
           git config user.name  "Instagram sync"
           git config user.email "actions@github.com"
           git add data/posts.json data/unsorted.json assets/img/hero.jpg
+          if [ -f data/token.json ]; then git add data/token.json; fi
           if git diff --staged --quiet; then
             echo "no change in the feed"
           else
