@@ -111,10 +111,8 @@ Instagram password, removes the app, or switches the account back to
 Personal — the connection dies and the galleries freeze at their last good
 state. They won't go blank; the site keeps showing whatever it last fetched.
 
-Fixing it means generating a new token at developers.facebook.com and putting
-it in **Settings → Secrets and variables → Actions → `IG_TOKEN`**. A newly
-entered `IG_TOKEN` always takes over from the stored copy. Message me and
-I'll walk you through it, it's the same ten minutes as the first time.
+Fixing it means a new token — see **Getting a new Instagram token** below.
+A newly entered `IG_TOKEN` always takes over from the stored copy.
 
 **2. A sync fails.**
 The Actions tab shows a red cross. The site doesn't change — the script is
@@ -122,6 +120,45 @@ written to leave the last good feed in place rather than publish something
 broken. So a failed sync is never urgent.
 
 ---
+
+## Getting a new Instagram token
+
+Needed only if the connection dies (above), or if a token may have been seen
+by someone it shouldn't have been. This is exactly what we did on 28 October.
+
+**If a token may have been exposed, do this first.** On Suvarna's phone:
+Instagram → Settings → **Apps and websites** → find **The Mantha Studio-IG**
+→ **Remove**. That cancels every old token at once. It has to come *before*
+the next step — removing the app afterwards cancels the new token too.
+
+**Then generate the new one:**
+
+1. developers.facebook.com → **My Apps** → **The Mantha Studio-IG**
+2. Instagram → **API setup with Instagram business login**
+3. Open **1. Generate access tokens** (the arrow on the right — it starts closed)
+4. Next to **manthas_food_palette**, click **Generate token**
+5. Log in to her Instagram and approve when asked — approving is what reconnects it
+6. Copy the token it shows (a long string starting `IGAA`)
+
+If **Generate token** gives an error, use the bin icon on her row, then
+**Add account**, and start again from step 4.
+
+Two buttons on that page to leave alone:
+
+- **Sync app name** only copies the app's name inside Meta. It has nothing
+  to do with the website.
+- **Instagram app secret → Show.** Never show it, never send it anywhere.
+  Nothing on the site uses it.
+
+**Then put the token in.** It goes into **Settings → Secrets and variables →
+Actions → `IG_TOKEN`**. While the project still lives under my account, only
+I can change secrets — send me the token and I'll put it in. After the
+project is handed over to you, you do this yourself.
+
+**Check it worked:** Actions tab → **Sync Instagram feed** → **Run workflow**.
+A green tick, and the line `token: IG_TOKEN was replaced - starting from it`
+in its log, means it's live. The token itself never appears in that log —
+if it ever does, tell me straight away.
 
 ## What is deliberately not automatic
 

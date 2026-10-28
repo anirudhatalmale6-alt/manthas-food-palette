@@ -177,6 +177,10 @@ this volume.
 > token can no longer reach the log, and about once a week a fresh one is
 > stored, encrypted, in `data/token.json`. Treat any token from before
 > 21 October as exposed.
+>
+> If the connection ever needs a new token — Suvarna removes the app, changes
+> her Instagram password, or a token may have been seen — the click-by-click
+> steps are in the maintenance guide, under **Getting a new Instagram token**.
 
 Changing text, choosing the hero picture, or moving a post between Food and Art
 is all explained in
